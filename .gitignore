@@ -1,0 +1,12 @@
+bash/*/*.bash
+bash/*/*.bats
+bash/*/.exercism
+c/*/test-framework
+c/*/makefile
+cpp/*/test
+cpp/*/CMakeLists.txt
+javascript/*/LICENSE
+javascript/*/.eslintrc
+javascript/*/.gitignore
+javascript/*/npmrc
+javascript/*/package.json
