@@ -1,16 +1,23 @@
 #!/usr/bin/env bash
 
-# echo "What is your input ?"
-# read varname
-input="Liquid-crystal display"
-arrIN=(${input//blank/ })
-taille=${#arrIN}+1
-accronyme=""
+nbr=$#
+if [ $nbr -eq 1 ]; 
+then 
+	input=$1
+    ascii_value=$(od -An -t u1 <<< "\*")
+    listeMots=$(echo $input | tr "-" "\n" | tr "_" "\n" | tr "\42" "\n")
+    accronyme=""
+    taille=${#listeMots}+1
 
-for (( i=0; i<=taille; i++ ))
-do
-    mot=${arrIN[i]^}
-    accronyme=$accronyme"${mot::1}"
-done
+    for ip in $listeMots
+    do
+        mot=${ip^}
+        initiale=${mot::1}
+        accronyme=$accronyme"${mot::1}"
+    done
 
-echo "$accronyme"
+    echo "$accronyme"
+else 
+    echo "Usage: error_handling.sh <person>"
+    exit 1
+fi
