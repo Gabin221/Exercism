@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# ./hamming.sh GAGCCTACTAACGGGAT CATCGTAATGACGGCCT
-
 nbr=$#
 brin1=$1
 brin2=$2
@@ -13,26 +11,17 @@ then
     then 
         for (( i=0; i<=${#brin1}; i++ ))
         do
-            if [ "${brin1:i:1}" == "A" ] && [ "${brin2:i:1}" != "T" ];
-            then
-                distance=$((distance+1))
-            elif [ "${brin1:i:1}" == "C" ] && [ "${brin2:i:1}" != "G" ];
-            then
-                distance=$((distance+1))
-            elif [ "${brin1:i:1}" == "G" ] && [ "${brin2:i:1}" != "C" ];
-            then
-                distance=$((distance+1))
-            elif [ "${brin1:i:1}" == "T" ] && [ "${brin2:i:1}" != "A" ];
+            if [ "${brin1:i:1}" != "${brin2:i:1}" ];
             then
                 distance=$((distance+1))
             fi
         done
     else 
-        echo "Les chaines ne font pas la même taille"
+        echo "strands must be of equal length"
         exit 1
     fi
 else 
-    echo "Un seul argument autorisé"
+    echo "Usage: hamming.sh <string1> <string2>"
     exit 1
 fi
 
