@@ -4,20 +4,39 @@ nbr=$#
 if [ $nbr -eq 1 ]; 
 then 
 	input=$1
-    ascii_value=$(od -An -t u1 <<< "\*")
-    listeMots=$(echo $input | tr "-" "\n" | tr "_" "\n" | tr \* "\n")
-    accronyme=""
-    taille=${#listeMots}+1
+    position=$(expr index "$input" "*")
 
-    for ip in $listeMots
-    do
-        mot=${ip^}
-        initiale=${mot::1}
-        accronyme=$accronyme"${mot::1}"
-    done
+    if [[ $position -ne 0 ]]; 
+    then
+        split1=${input::position-1}${input:position:${#input}}
+        listeMots=$(echo $split1 | tr "-" "\n" | tr "_" "\n")
+        accronyme=""
+        taille=${#listeMots}+1
 
-    echo "$accronyme"
+        for ip in $listeMots
+        do
+            mot=${ip^}
+            initiale=${mot::1}
+            accronyme=$accronyme"$initiale"
+        done
+
+        echo "$accronyme"
+    else
+        split1=${input::position-1}${input:position:${#input}}
+        listeMots=$(echo $input | tr "-" "\n" | tr "_" "\n")
+        accronyme=""
+        taille=${#listeMots}+1
+
+        for ip in $listeMots
+        do
+            mot=${ip^}
+            initiale=${mot::1}
+            accronyme=$accronyme"$initiale"
+        done
+
+        echo "$accronyme"
+    fi
 else 
-    echo "Usage: error_handling.sh <person>"
+    echo "Usage: acronym.sh <person>"
     exit 1
 fi
