@@ -11,15 +11,12 @@ then
         lettre=${pangram:$i:1}
         alphabet="abcdefghijklmnopqrstuvwxyz"
 
-        case $alphabet in 
+        if grep -sq '$lettre' <<< "$alphabet"
+        then
+            nbrLettres=$((nbrLettres+1))
+            alphabet="sed -i '1d' $alphabet"
+        fi
         
-            *"$lettre"*)
-                nbrLettres=$((nbrLettres+1))
-                alphabet="${maVar%%lettre*}${maVar%lettre*}"
-                ;;
-
-        esac
-
         echo "$alphabet"
     done
 
