@@ -1,24 +1,37 @@
 #!/usr/bin/env bash
 
-# The following comments should help you get started:
-# - Bash is flexible. You may use functions or write a "raw" script.
-#
-# - Complex code can be made easier to read by breaking it up
-#   into functions, however this is sometimes overkill in bash.
-#
-# - You can find links about good style and other resources
-#   for Bash in './README.md'. It came with this exercise.
-#
-#   Example:
-#   # other functions here
-#   # ...
-#   # ...
-#
-#   main () {
-#     # your main function code here
-#   }
-#
-#   # call main with all of the positional arguments
-#   main "$@"
-#
-# *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
+nbrParam=$#
+if [ $nbrParam -eq 1 ]; 
+then 
+    parametre=$1
+    pangram="$(tr [A-Z] [a-z] <<< "$parametre")"
+    nbrLettres=0
+    for (( i=0; i<${#pangram}; i++ )); 
+    do
+        lettre=${pangram:$i:1}
+        alphabet="abcdefghijklmnopqrstuvwxyz"
+
+        case $alphabet in 
+        
+            *"$lettre"*)
+                nbrLettres=$((nbrLettres+1))
+                alphabet="${maVar%%lettre*}${maVar%lettre*}"
+                ;;
+
+        esac
+
+        echo "$alphabet"
+    done
+
+    echo $nbrLettres
+
+    if [ $nbrLettres -eq 26 ];
+    then
+        echo "true"
+    else
+        echo "false"
+    fi
+else 
+    echo "Usage: acronym.sh <person>"
+    exit 1
+fi
