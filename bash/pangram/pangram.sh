@@ -1,31 +1,29 @@
 #!/usr/bin/env bash
 
 nbrParam=$#
-if [ $nbrParam -eq 1 ]; 
-then 
-    parametre=$1
-    pangram="$(tr [A-Z] [a-z] <<< "$parametre")"
-    nbrLettres=0
-    for (( i=0; i<${#pangram}; i++ )); 
+if [ $nbrParam -eq 1 ];
+then
+    chaine=$1
+    parametre=$(tr '[:upper:]' '[:lower:]' <<< "$chaine")
+    
+    alphabet="abcdefghijklmnopqrstuvwxyz"
+    lettresPresentes=""
+
+    for lettre in $(echo "$parametre" | grep -o .);
     do
-        lettre=${pangram:$i:1}
-        alphabet="abcdefghijklmnopqrstuvwxyz"
-        if [[ "$alphabet" == *"$lettre"* ]];
+        if [[ $alphabet == *"$lettre"* && ! $lettresPresentes == *"$lettre"* ]];
         then
-            nbrLettres=$((nbrLettres+1))
-            alphabet=${alphabet#lettre}
+            lettresPresentes="$lettresPresentes$lettre"
         fi
     done
 
-    echo $nbrLettres
-
-    if [ $nbrLettres -eq 26 ];
+    if [ ${#lettresPresentes} -eq 26 ];
     then
         echo "true"
     else
         echo "false"
     fi
 else 
-    echo "Usage: acronym.sh <person>"
+    echo "Usage: pangram.sh <mot>"
     exit 1
 fi
