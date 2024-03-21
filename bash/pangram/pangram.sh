@@ -10,14 +10,11 @@ then
     do
         lettre=${pangram:$i:1}
         alphabet="abcdefghijklmnopqrstuvwxyz"
-
-        if grep -sq '$lettre' <<< "$alphabet"
+        if [[ "$alphabet" == *"$lettre"* ]];
         then
             nbrLettres=$((nbrLettres+1))
-            alphabet="sed -i '1d' $alphabet"
+            alphabet=${alphabet#lettre}
         fi
-        
-        echo "$alphabet"
     done
 
     echo $nbrLettres
