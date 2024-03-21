@@ -4,9 +4,12 @@ nbr=$#
 if [ $nbr -eq 1 ]; 
 then 
     nbr=$1
-    for i in ${#nbr};
+    resultat=0
+    # for i in ${#nbr};
+    for i in $nbr;
     do
-	echo $i
+	    echo "$i"
+        echo ""
     done
 else 
     echo "Usage: acronym.sh <person>"
