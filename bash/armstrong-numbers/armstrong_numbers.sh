@@ -1,16 +1,24 @@
 #!/usr/bin/env bash
 
-nbr=$#
-if [ $nbr -eq 1 ]; 
+nbrParam=$#
+if [ $nbrParam -eq 1 ]; 
 then 
     nbr=$1
     resultat=0
-    # for i in ${#nbr};
-    for i in $nbr;
+    for (( i=0; i<${#nbr}; i++ )); 
     do
-	    echo "$i"
-        echo ""
+        chiffre=${nbr:$i:1}
+        valeur=$((chiffre**${#nbr}))
+        resultat=$((resultat+valeur))
     done
+
+    if [ "$resultat" -eq "$nbr" ];
+    then
+        echo "true"
+    else
+        echo "false"
+    fi
+    
 else 
     echo "Usage: acronym.sh <person>"
     exit 1
