@@ -10,13 +10,13 @@ then
     while [ $y > 0 ]:
     do
         digit_count=$((digit_count+1))
-        y=$y/$b
+        y=$((y/b))
     done
     total=0
     while [ $x > 0 ]:
     do
         total=$((total+(x%b)**digit_count))
-        x=((x/b))
+        x=$((x/b))
     done
     echo "total=$total"
 else 
