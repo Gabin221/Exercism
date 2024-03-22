@@ -22,7 +22,7 @@ then
         echo "Calm down, I know what I'm doing!"
         something=$((something+1))
     fi
-    if [[ $lettre == *"$(echo "$question" | grep -q *" "; echo $?)"* ]];
+    if [[ $lettre == *"$(echo "$question" | grep -q " "*; echo $?)"* ]];
     then
         echo "Fine. Be that way!"
         something=$((something+1))
