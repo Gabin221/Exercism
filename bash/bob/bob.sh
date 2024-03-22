@@ -1,24 +1,38 @@
 #!/usr/bin/env bash
 
-# The following comments should help you get started:
-# - Bash is flexible. You may use functions or write a "raw" script.
-#
-# - Complex code can be made easier to read by breaking it up
-#   into functions, however this is sometimes overkill in bash.
-#
-# - You can find links about good style and other resources
-#   for Bash in './README.md'. It came with this exercise.
-#
-#   Example:
-#   # other functions here
-#   # ...
-#   # ...
-#
-#   main () {
-#     # your main function code here
-#   }
-#
-#   # call main with all of the positional arguments
-#   main "$@"
-#
-# *** PLEASE REMOVE THESE COMMENTS BEFORE SUBMITTING YOUR SOLUTION ***
+nbr=$#
+if [ $nbr -eq 1 ]; 
+then 
+    question=$1
+    something=0
+    # for lettre in $(echo "$question");
+    # do
+    if [[ $question == *"?"* ]];
+    then
+        echo "Sure."
+        something=$((something+1))
+    fi
+    if [[ "$question" == "${question^^}" ]];
+    then
+        echo "Whoa, chill out!"
+        something=$((something+1))
+    fi
+    if [[ $question == *"?"* ]];
+    then
+        echo "Calm down, I know what I'm doing!"
+        something=$((something+1))
+    fi
+    if [[ $lettre == *"$(echo "$question" | grep -q *" "; echo $?)"* ]];
+    then
+        echo "Fine. Be that way!"
+        something=$((something+1))
+    fi
+    if [[ $something -eq 0 ]];
+    then
+        echo "Whatever."
+    fi
+    # done
+else 
+    echo "Usage: acronym.sh <person>"
+    exit 1
+fi
