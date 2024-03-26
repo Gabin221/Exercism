@@ -1,5 +1,4 @@
 #include "hello_world.h"
-#include <iostream>
 
 using namespace std;
 
@@ -11,9 +10,4 @@ string hello()
     return "Hello, World!";
 }
 
-}
-
-int main () {
-    cout << hello_world::hello() << endl;
-    return 0;
 }
