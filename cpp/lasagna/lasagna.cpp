@@ -30,7 +30,6 @@ int preparationTime(int numberOfLayers) {
 int elapsedTime(int numberOfLayers, int actualMinutesInOven) {
     // TODO: Calculate and return the total time so far.
     int preparationTimeInt = preparationTime(numberOfLayers);
-    int remainingTime = remainingOvenTime(actualMinutesInOven);
-    int totalTime = preparationTimeInt + remainingTime;
+    int totalTime = preparationTimeInt + actualMinutesInOven;
     return totalTime;
 }
