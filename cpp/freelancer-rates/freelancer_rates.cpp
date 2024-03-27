@@ -1,4 +1,6 @@
-#include<iostream>
+#include <math.h>
+#include <iostream>
+
 using namespace std;
 
 // INFO: Headers from the standard library should be inserted at the top via
@@ -8,13 +10,15 @@ using namespace std;
 double daily_rate(double hourly_rate) {
     // TODO: Implement a function to calculate the daily rate given an hourly
     // rate
-    return hourly_rate*8.0;
+    double resultat = hourly_rate*8.0;
+    return (double)resultat;
 }
 
 // apply_discount calculates the price after a discount
 double apply_discount(double before_discount, double discount) {
     // TODO: Implement a function to calculate the price after a discount.
-    return before_discount - (before_discount*discount/100.0);
+    double apply = before_discount - (before_discount*discount/100.0);
+    return apply;
 }
 
 // monthly_rate calculates the monthly rate, given an hourly rate and a discount
@@ -22,8 +26,16 @@ double apply_discount(double before_discount, double discount) {
 int monthly_rate(double hourly_rate, double discount) {
     // TODO: Implement a function to calculate the monthly rate, and apply a
     // discount.
-    double monthly_rate = apply_discount(22.0*daily_rate(hourly_rate), discount);
-    return monthly_rate;
+    int monthly_rate = apply_discount(22.0*daily_rate(hourly_rate), discount);
+    int resultat = 0;
+    cout << monthly_rate%1 << endl;
+    if ((int)monthly_rate%1 < 0.5) {
+        resultat = floor(monthly_rate);
+    } else {
+        resultat = ceil(monthly_rate);
+    }
+    
+    return resultat;
 }
 
 // days_in_budget calculates the number of workdays given a budget, hourly rate,
@@ -32,10 +44,11 @@ int monthly_rate(double hourly_rate, double discount) {
 int days_in_budget(int budget, double hourly_rate, double discount) {
     // TODO: Implement a function that takes a budget, an hourly rate, and a
     // discount, and calculates how many complete days of work that covers.
-    return 0;
+    int nbr = floor(budget/(hourly_rate*(1 - discount/100)*8));
+    return nbr;
 }
 
-int main(){
-    cout << monthly_rate(77, 10.5) << endl;
+int main() {
+    cout << monthly_rate(62.8, 0.0) << endl;
     return 0;
 }
