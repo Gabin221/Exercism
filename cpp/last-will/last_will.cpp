@@ -43,3 +43,14 @@ namespace garcia {
 }
 
 // Enter your code below
+namespace estate_executor {
+    int assemble_account_number(int secret_modifier) {
+        return zhang::bank_number_part(secret_modifier) + khan::bank_number_part(secret_modifier) + garcia::bank_number_part(secret_modifier);
+    }
+
+    int assemble_code() {
+        int red = zhang::red::code_fragment() + khan::red::code_fragment() + garcia::red::code_fragment();
+        int blue = zhang::blue::code_fragment() + khan::blue::code_fragment() + garcia::blue::code_fragment();
+        return red*blue;
+    }
+}
