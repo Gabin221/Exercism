@@ -1,7 +1,4 @@
 #include <math.h>
-#include <iostream>
-
-using namespace std;
 
 // INFO: Headers from the standard library should be inserted at the top via
 // #include <LIBRARY_NAME>
@@ -10,15 +7,13 @@ using namespace std;
 double daily_rate(double hourly_rate) {
     // TODO: Implement a function to calculate the daily rate given an hourly
     // rate
-    double resultat = hourly_rate*8.0;
-    return (double)resultat;
+    return hourly_rate*8;
 }
 
 // apply_discount calculates the price after a discount
 double apply_discount(double before_discount, double discount) {
     // TODO: Implement a function to calculate the price after a discount.
-    double apply = before_discount - (before_discount*discount/100.0);
-    return apply;
+    return before_discount * (1 - discount / 100);
 }
 
 // monthly_rate calculates the monthly rate, given an hourly rate and a discount
@@ -26,16 +21,7 @@ double apply_discount(double before_discount, double discount) {
 int monthly_rate(double hourly_rate, double discount) {
     // TODO: Implement a function to calculate the monthly rate, and apply a
     // discount.
-    int monthly_rate = apply_discount(22.0*daily_rate(hourly_rate), discount);
-    int resultat = 0;
-    cout << monthly_rate%1 << endl;
-    if ((int)monthly_rate%1 < 0.5) {
-        resultat = floor(monthly_rate);
-    } else {
-        resultat = ceil(monthly_rate);
-    }
-    
-    return resultat;
+    return ceil(apply_discount(daily_rate(hourly_rate) * 22, discount));
 }
 
 // days_in_budget calculates the number of workdays given a budget, hourly rate,
@@ -46,9 +32,4 @@ int days_in_budget(int budget, double hourly_rate, double discount) {
     // discount, and calculates how many complete days of work that covers.
     int nbr = floor(budget/(hourly_rate*(1 - discount/100)*8));
     return nbr;
-}
-
-int main() {
-    cout << monthly_rate(62.8, 0.0) << endl;
-    return 0;
 }
