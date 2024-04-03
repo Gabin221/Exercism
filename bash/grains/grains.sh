@@ -3,23 +3,24 @@
 nbr=$#
 if [ $nbr -eq 1 ]; 
 then 
-    input=$1
-    if [[ $input <= 0 ]];
+    if [[ $1 == "total" ]]; 
     then
-        echo "Error: invalid input"
-    else
         factorielleComplet=0
-        factorielleInput=$((2**(input-1)))
 
-        for (( i=1; i<=64; i++ ));
+        for (( i=0; i<64; i++ ));
         do
-            factorielleComplet=$((factorielleComplet+2**i))
+            factorielleComplet=$(echo "$factorielleComplet + 2 ^ $i" | bc)
         done
 
         echo $factorielleComplet
+    elif [[ $1 -ge 1 ]] && [[ $1 -ge 64 ]]; 
+    then
+        input=$1
+        factorielleInput=$(echo "2 ^ $((input - 1))" | bc)
         echo $factorielleInput
+    else
+        echo "Error: invalid input" && exit 1
     fi
-
 else 
     echo "Usage: grains.sh <person>"
     exit 1

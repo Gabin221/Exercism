@@ -103,6 +103,8 @@ echo "5 plus 3 = $((5+3))"
 echo "5 fois 3 = $((5*3))"
 echo "5 puissance 3: $((5**3))"
 echo "5 modulo 3: $((5%3))"
+echo "2 puissance 100 avec bc: $(echo "2 ^ 100" | bc)"
+echo "2 puissance 100 sans bc: $((2**100))"
 ```
 
 ### Vérifier si une chaîne est contenue dans une autre
