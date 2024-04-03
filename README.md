@@ -51,8 +51,11 @@ nbr=$#
 if [ $nbr -eq 1 ]; 
 then 
     echo "Il y a un seul paramètre"
-else 
-    echo "Il y a plus de un paramètre"
+elif [ $nbr -eq 2 ]; 
+then
+    echo "Il y a deux paramètres"
+else
+    echo "Il y a plus de deux paramètres"
 fi
 ```
 
@@ -99,6 +102,35 @@ echo "Après incrémentation: ${nbr}"
 echo "5 plus 3 = $((5+3))"
 echo "5 fois 3 = $((5*3))"
 echo "5 puissance 3: $((5**3))"
+echo "5 modulo 3: $((5%3))"
+```
+
+### Vérifier si une chaîne est contenue dans une autre
+
+```bash
+#!/usr/bin/env bash
+
+chaine="coucou"
+sousChaine="ou"
+
+if [[ ${chaine} =~ ${sousChaine} ]];
+then
+    echo "'${chaine}' contient '${sousChaine}'"
+fi
+```
+
+### Lowercase/Uppercase
+
+```bash
+#!/usr/bin/env bash
+
+chaine="CouCou"
+
+lowercase=$(tr '[:upper:]' '[:lower:]' <<< "$chaine")
+uppercase=$(tr '[:lower:]' '[:upper:]' <<< "$chaine")
+
+echo "${chaine} en lowercase: ${lowercase}"
+echo "${chaine} en uppercase: ${uppercase}"
 ```
 
 ## C
