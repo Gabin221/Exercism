@@ -1,7 +1,6 @@
 #include <array>
 #include <string>
 #include <vector>
-#include <iostream>
 
 using namespace std;
 
@@ -73,10 +72,14 @@ vector<string> student_ranking(vector<int> student_scores, vector<string> studen
 // Create a string that contains the name of the first student to make a perfect score on the exam.
 string perfect_score(vector<int> student_scores, vector<string> student_names) {
     // TODO: Implement perfect_score
-    return "";
-}
+    string student = "";
 
-int main() {
-    student_ranking({100, 99, 90, 84, 66, 53, 47}, {"Joci", "Sara","Kora","Jan","Indra","Bern", "Fred"});
-    return 0;
+    for (unsigned int i = 0; i < student_scores.size(); i++) {
+        if (student_scores[i] == 100){
+            student = student_names[i];
+            break;
+        }
+    }
+
+    return student;
 }
