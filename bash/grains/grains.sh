@@ -12,12 +12,12 @@ then
             factorielleComplet=$(echo "$factorielleComplet + 2 ^ $i" | bc)
         done
 
-        echo $factorielleComplet
-    elif [[ $1 -ge 1 ]] && [[ $1 -ge 64 ]]; 
+        echo "$factorielleComplet"
+    elif [[ $1 -ge 1 ]] && [[ $1 -le 64 ]]; 
     then
         input=$1
         factorielleInput=$(echo "2 ^ $((input - 1))" | bc)
-        echo $factorielleInput
+        echo "$factorielleInput"
     else
         echo "Error: invalid input" && exit 1
     fi
