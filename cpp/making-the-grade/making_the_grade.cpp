@@ -61,7 +61,13 @@ array<int, 4> letter_grades(int highest_score) {
 // Organize the student's rank, name, and grade information in ascending order.
 vector<string> student_ranking(vector<int> student_scores, vector<string> student_names) {
     // TODO: Implement student_ranking
-    return {};
+    vector<string> ranking = {};
+
+    for (unsigned int i = 0; i < student_scores.size(); i++) {
+        ranking.push_back(to_string(i + 1) + ". " + student_names[i] + ": " + to_string(student_scores[i]));
+    }
+
+    return ranking;
 }
 
 // Create a string that contains the name of the first student to make a perfect score on the exam.
@@ -71,6 +77,6 @@ string perfect_score(vector<int> student_scores, vector<string> student_names) {
 }
 
 int main() {
-    letter_grades(88);
+    student_ranking({100, 99, 90, 84, 66, 53, 47}, {"Joci", "Sara","Kora","Jan","Indra","Bern", "Fred"});
     return 0;
 }
