@@ -200,13 +200,3 @@ else
     echo "${nbr} != 3"
 fi
 ```
-
-## C
-
-## C++
-
-## JavaScript
-
-## Kotlin
-
-## Python
