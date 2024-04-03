@@ -117,6 +117,13 @@ if [[ ${chaine} =~ ${sousChaine} ]];
 then
     echo "'${chaine}' contient '${sousChaine}'"
 fi
+
+echo "Autre possibilité:"
+
+if [[ $chaine == *"$sousChaine"* ]];
+then
+    echo "'${chaine}' contient '${sousChaine}'"
+fi
 ```
 
 ### Lowercase/Uppercase
@@ -131,6 +138,20 @@ uppercase=$(tr '[:lower:]' '[:upper:]' <<< "$chaine")
 
 echo "${chaine} en lowercase: ${lowercase}"
 echo "${chaine} en uppercase: ${uppercase}"
+```
+
+### Enlever un caractère d'une chaîne
+
+```bash
+#!/usr/bin/env bash
+
+chaine="coucou"
+echo "chaîne de départ: ${chaine}"
+
+chaineModifiee=$( echo $chaine | tr -d 'c' )
+eval chaine=\$chaineModifiee
+
+echo "chaine modifiée: ${chaine}"
 ```
 
 ## C
