@@ -21,19 +21,41 @@ vector<int> round_down_scores(vector<double> student_scores) {
 // Count the number of failing students out of the group provided.
 int count_failed_students(vector<int> student_scores) {
     // TODO: Implement count_failed_students
-    return 0;
+    int nbr = 0;
+
+    for (unsigned int i = 0; i < student_scores.size(); i++) {
+            if (student_scores[i] <= 40){
+                nbr += 1;
+            }
+    }
+
+    return nbr;
 }
 
 // Determine how many of the provided student scores were 'the best' based on the provided threshold.
 vector<int> above_threshold(vector<int> student_scores, int threshold) {
     // TODO: Implement above_threshold
-    return {};
+    vector<int> meilleurs = {};
+
+    for (unsigned int i = 0; i < student_scores.size(); i++) {
+        if (student_scores[i] >= threshold){
+            meilleurs.push_back(student_scores[i]);
+        }
+    }
+
+    return meilleurs;
 }
 
 // Create a list of grade thresholds based on the provided highest grade.
 array<int, 4> letter_grades(int highest_score) {
     // TODO: Implement letter_grades
-    return {};
+    array<int, 4> grades = {};
+
+    for (int i = 0; i < 4; i++) {
+        grades[i] = 41 + i*(highest_score - 40)/4;
+    }
+
+    return grades;
 }
 
 // Organize the student's rank, name, and grade information in ascending order.
@@ -49,6 +71,6 @@ string perfect_score(vector<int> student_scores, vector<string> student_names) {
 }
 
 int main() {
-    round_down_scores({90.33, 40.5, 55.44, 70.05, 30.55, 25.45, 80.45, 95.3, 38.7, 40.3});
+    letter_grades(88);
     return 0;
 }
