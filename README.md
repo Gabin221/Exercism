@@ -196,7 +196,17 @@ nbr=3
 if [ $nbr -eq 3 ]; 
 then 
     echo "${nbr} = 3"
-else
+fi
+if [ $nbr -ne 5 ]; 
+then 
     echo "${nbr} != 3"
+fi
+if [ $nbr -ge 2 ] || [ $nbr -gt 2 ]; 
+then 
+    echo "${nbr} >= 2, ${nbr} > 2"
+fi
+if [ $nbr -le 4 ] || [ $nbr -lt 4 ]; 
+then 
+    echo "${nbr} <= 4, ${nbr} < 4"
 fi
 ```
