@@ -42,7 +42,7 @@ echo "La taille de la chaîne '${input}' est: ${#input}"
 
 ### Boucles
 
-#### if else et condition
+#### if else
 
 ```bash
 #!/usr/bin/env bash
@@ -184,6 +184,20 @@ then
     echo "${chaine1} = ${chaine2}"
 else
     echo "${chaine2} != ${chaine2}"
+fi
+```
+
+### Comparer deux entiers
+
+```bash
+#!/usr/bin/env bash
+
+nbr=3
+if [ $nbr -eq 3 ]; 
+then 
+    echo "${nbr} = 3"
+else
+    echo "${nbr} != 3"
 fi
 ```
 
