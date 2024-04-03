@@ -146,12 +146,45 @@ echo "${chaine} en uppercase: ${uppercase}"
 #!/usr/bin/env bash
 
 chaine="coucou"
-echo "chaîne de départ: ${chaine}"
-
 chaineModifiee=$( echo $chaine | tr -d 'c' )
-eval chaine=\$chaineModifiee
 
-echo "chaine modifiée: ${chaine}"
+echo "chaîne de départ: ${chaine}"
+echo "chaine modifiée: ${chaineModifiee}"
+```
+
+### Concaténer deux chaînes de caractères
+
+```bash
+#!/usr/bin/env bash
+
+chaine1="Hello, "
+chaine2="World!"
+
+concatenation="${chaine1}${chaine2}"
+
+echo "chaine 1: '${chaine1}'"
+echo "chaine 2: '${chaine2}'"
+echo "concaténation: '${concatenation}'"
+```
+
+### Comparer deux chaînes de caractères
+
+```bash
+#!/usr/bin/env bash
+
+chaine1="coucou"
+chaine2="CouCou"
+
+if [ "$chaine1" = "coucou" ];
+then 
+    echo "${chaine1} = coucou"
+fi
+if [ "$chaine1" = "$chaine2" ];
+then 
+    echo "${chaine1} = ${chaine2}"
+else
+    echo "${chaine2} != ${chaine2}"
+fi
 ```
 
 ## C
