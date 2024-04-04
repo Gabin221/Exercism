@@ -7,12 +7,12 @@ then
     input=$1
     short=$( echo $input | tr -d ' ' )
     resultat=""
+    somme=0
     if [ ${#input} -le 1 ]; 
     then
         echo "problème"
         exit 1
     else
-        echo $short
         for (( i=1; i<=${#short}; i++ ))
         do
             chiffre=$(echo $short[i] | cut -c$i)
@@ -30,7 +30,17 @@ then
                 resultat+="$chiffre"
             fi
         done
-        echo "résultat: $resultat"
+        for (( i=1; i<=${#short}; i++ ))
+        do
+            chiffre=$(echo $resultat[i] | cut -c$i)
+            somme=$((somme+chiffre))
+        done
+        if [ $((somme%10)) -eq 0 ];
+        then
+            echo "true"
+        else
+            echo "false"
+        fi
     fi
 else
     echo "Il y a plus de deux paramètres"
