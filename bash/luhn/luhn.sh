@@ -10,7 +10,7 @@ then
     somme=0
     if [ ${#input} -le 1 ]; 
     then
-        echo "problème"
+        echo "false"
         exit 1
     else
         for (( i=1; i<=${#short}; i++ ))
@@ -38,8 +38,10 @@ then
         if [ $((somme%10)) -eq 0 ];
         then
             echo "true"
+            exit 0
         else
             echo "false"
+            exit 1
         fi
     fi
 else
