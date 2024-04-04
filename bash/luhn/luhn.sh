@@ -8,10 +8,10 @@ then
     short=$( echo $input | tr -d ' ' )
     resultat=""
     somme=0
-    if [ ${#input} -le 1 ]; 
+    if [[ $num =~ ^-?[0-9]+$ ]] || [ ${#input} -le 1 ]; 
     then
         echo "false"
-        exit 1
+        exit 0
     else
         for (( i=1; i<=${#short}; i++ ))
         do
@@ -35,13 +35,12 @@ then
             chiffre=$(echo $resultat[i] | cut -c$i)
             somme=$((somme+chiffre))
         done
+        echo $resultat
         if [ $((somme%10)) -eq 0 ];
         then
             echo "true"
-            exit 0
         else
             echo "false"
-            exit 1
         fi
     fi
 else
