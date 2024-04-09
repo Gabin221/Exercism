@@ -1,6 +1,5 @@
 #include <string>
 #include <vector>
-#include <iostream>
 
 namespace election {
 
@@ -13,7 +12,7 @@ struct ElectionResult {
     int votes{};
 };
 
-int vote_count(ElectionResult name) {
+int vote_count(ElectionResult & name) {
     return name.votes;
 }
 
@@ -21,18 +20,17 @@ void increment_vote_count(ElectionResult & name, int count) {
     name.votes += count;
 }
 
-std::string determine_result(std::vector<ElectionResult> final_count) {
-    std::string result = "President ";
-    std::string nom = "";
-    int max_count = 0;
-    for (int i = 0; i < final_count.size(); i++) {
-        if (final_count[i].votes > max_count) {
-            max_count = final_count[i].votes;
-            nom = final_count[i].name;
+ElectionResult& determine_result(std::vector<ElectionResult>& final_count) {
+    int max=0;
+    int index=0;
+    for (int i=0; i<final_count.size(); i++){
+        if (final_count[i].votes > max){
+            max = final_count[i].votes;
+            index=i;
         }
     }
-
-    return result + nom;
+    final_count[index].name = "President " + final_count[index].name;
+    return final_count[index];
 }
 
 // TODO: Task 1
@@ -55,12 +53,3 @@ std::string determine_result(std::vector<ElectionResult> final_count) {
 
 
 }  // namespace election
-
-int main() {
-    election::ElectionResult sanchez{"Pedro", 471};
-    election::ElectionResult wheatley{"Summer", 340};
-    std::vector<election::ElectionResult> final_count{sanchez, wheatley};
-
-    std::cout << determine_result(final_count) << std::endl;
-    return 0;
-}
