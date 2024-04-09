@@ -60,7 +60,7 @@ bool permission_check(Action action, AccountStatus status) {
 // of type `AccountStatus` and returns a `bool`.
 
 bool valid_player_combination(AccountStatus status1, AccountStatus status2) {
-    if (status1 != AccountStatus::guest || status2 != AccountStatus::guest) {
+    if (status1 != AccountStatus::guest && status2 != AccountStatus::guest) {
         if (status1 == AccountStatus::troll) {
             if (status2 == AccountStatus::troll) {
                 return true;
@@ -83,16 +83,24 @@ bool valid_player_combination(AccountStatus status1, AccountStatus status2) {
 
 bool has_priority(AccountStatus status1, AccountStatus status2) {
     if (status1 == AccountStatus::mod) {
-        return true;
+        if (status2 == AccountStatus::mod) {
+            return false;
+        } else {
+            return true;
+        }
     } else if (status1 == AccountStatus::user) {
         if (status2 == AccountStatus::troll || status2 == AccountStatus::guest) {
             return true;
+        } else if (status2 == AccountStatus::mod) {
+            return false;
         } else {
             return false;
         }
     } else if (status1 == AccountStatus::guest) {
         if (status2 == AccountStatus::troll) {
             return true;
+        } else if (status2 == AccountStatus::mod || status2 == AccountStatus::user) {
+            return false;
         } else {
             return false;
         }
