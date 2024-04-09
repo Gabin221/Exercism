@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include <iostream>
 
 namespace election {
 
@@ -54,3 +55,12 @@ std::string determine_result(std::vector<ElectionResult> final_count) {
 
 
 }  // namespace election
+
+int main() {
+    election::ElectionResult sanchez{"Pedro", 471};
+    election::ElectionResult wheatley{"Summer", 340};
+    std::vector<election::ElectionResult> final_count{sanchez, wheatley};
+
+    std::cout << determine_result(final_count) << std::endl;
+    return 0;
+}
