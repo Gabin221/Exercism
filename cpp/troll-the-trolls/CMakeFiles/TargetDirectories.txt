@@ -1,0 +1,4 @@
+/home/gabin/exercism/cpp/troll-the-trolls/CMakeFiles/troll-the-trolls.dir
+/home/gabin/exercism/cpp/troll-the-trolls/CMakeFiles/test_troll-the-trolls.dir
+/home/gabin/exercism/cpp/troll-the-trolls/CMakeFiles/edit_cache.dir
+/home/gabin/exercism/cpp/troll-the-trolls/CMakeFiles/rebuild_cache.dir

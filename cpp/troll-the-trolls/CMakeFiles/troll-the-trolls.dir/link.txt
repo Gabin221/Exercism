@@ -1,0 +1,1 @@
+/usr/bin/c++ -g "CMakeFiles/troll-the-trolls.dir/troll_the_trolls_test.cpp.o" "CMakeFiles/troll-the-trolls.dir/test/tests-main.cpp.o" -o troll-the-trolls
