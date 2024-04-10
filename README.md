@@ -212,3 +212,14 @@ then
     echo "${nbr} <= 4, ${nbr} < 4"
 fi
 ```
+
+### Récupérer la position d'une sous-chaîne dans une chaîne
+
+```bash
+chaine="<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16"
+# recherche de la première position de la chaine "16"
+recherche="16"
+debut_chaine="${chaine%%${recherche}*}"
+position=$((${#debut_chaine}+1))
+echo ${position}
+```
