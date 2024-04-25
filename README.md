@@ -303,7 +303,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-### Récupérer les paramètres en C++ <a id="recuperer-parametres-bash"></a>
+### Récupérer les paramètres en C++ <a id="recuperer-parametres-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -317,7 +317,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-### Connaître la taille d'une chaine de caractères en C++ <a id="connaitre-taille-chaine-caracteres-bash"></a>
+### Connaître la taille d'une chaine de caractères en C++ <a id="connaitre-taille-chaine-caracteres-c++"></a>
 
 ```cpp
 #include <iostream>
