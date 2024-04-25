@@ -228,10 +228,10 @@ echo ${position}
 
 ### Structure d'un fichier Python
 
-"""
+"""python
 #!/usr/bin/env python3
 
-# le reste du programme
+\# le reste du programme
 """
 
 ### Récupérer le nombre de paramètres
