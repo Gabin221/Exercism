@@ -231,7 +231,7 @@ echo ${position}
 ```python
 #!/usr/bin/env python3
 
-\# le reste du programme
+# le reste du programme
 ```
 
 ### Récupérer le nombre de paramètres
@@ -252,8 +252,8 @@ print("Nombre de paramètres:", nbr)
 
 import sys
 
-parametre1 = sys.argv[1] if len(sys.argv) > 1 else None
-parametre2 = sys.argv[2] if len(sys.argv) > 2 else None
+parametre1 = sys.argv[1]
+parametre2 = sys.argv[2]
 print("Le premier paramètre:", parametre1)
 print("Le second paramètre:", parametre2)
 ```
