@@ -1,14 +1,13 @@
-import TOCInline from '@theme/TOCInline';
-
 # Exercism
 
 ## Table des Matières
 
-<TOCInline toc={toc} />
++ [Bash](#bash)
+      + [Structure d'un fichier Bash](#structure-fichier-bash)
 
-## Bash
+## Bash <a id="bash"></a>
 
-### Structure d'un fichier Bash
+### Structure d'un fichier Bash <a id="structure-fichier-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
