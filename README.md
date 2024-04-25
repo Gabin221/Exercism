@@ -1,59 +1,10 @@
+import TOCInline from '@theme/TOCInline';
+
 # Exercism
 
 ## Table des Matières
 
-1. [Bash](#bash)
-    1. [Structure d'un fichier Bash](#structure-dun-fichier-bash)
-    2. [Récupérer le nombre de paramètres en Bash](#récupérer-le-nombre-de-paramètres-en-bash)
-    3. [Récupérer les paramètres en Bash](#récupérer-les-paramètres-en-bash)
-    4. [Connaître la taille d'une chaine de caractères en Bash](#connaître-la-taille-dune-chaîne-de-caractères-en-bash)
-    5. [Boucles en Bash](#boucles-en-bash)
-        1. [if else en Bash](#if-else-en-bash)
-        2. [for en Bash](#for-en-bash)
-    6. [Incrémenter une variable en Bash](#incrémenter-une-variable-en-bash)
-    7. [Opérations mathématiques en Bash](#opérations-mathématiques-en-bash)
-    8. [Vérifier si une chaîne est contenue dans une autre en Bash](#vérifier-si-une-chaîne-est-contenue-dans-une-autre-en-bash)
-    9. [Lowercase/Uppercase en Bash](#lowercaseuppercase-en-bash)
-    10. [Enlever un caractère d'une chaîne en Bash](#enlever-un-caractère-dune-chaîne-en-bash)
-    11. [Concaténer deux chaînes de caractères en Bash](#concaténer-deux-chaînes-de-caractères-en-bash)
-    12. [Comparer deux chaînes de caractères en Bash](#comparer-deux-chaînes-de-caractères-en-bash)
-    13. [Comparer deux entiers en Bash](#comparer-deux-entiers-en-bash)
-    14. [Récupérer la position d'une sous-chaîne dans une chaîne en Bash](#récupérer-la-position-dune-sous-chaîne-dans-une-chaîne-en-bash)
-2. [C++](#c++)
-    1. [Structure d'un fichier C++](#structure-dun-fichier-C++)
-    2. [Récupérer le nombre de paramètres en C++](#récupérer-le-nombre-de-paramètres-en-C++)
-    3. [Récupérer les paramètres en C++](#récupérer-les-paramètres-en-C++)
-    4. [Connaître la taille d'une chaine de caractères en C++](#connaître-la-taille-dune-chaîne-de-caractères-en-C++)
-    5. [Boucles en C++](#boucles-en-C++)
-        1. [if else en C++](#if-else-en-C++)
-        2. [for en C++](#for-en-C++)
-    6. [Incrémenter une variable en C++](#incrémenter-une-variable-en-C++)
-    7. [Opérations mathématiques en C++](#opérations-mathématiques-en-C++)
-    8. [Vérifier si une chaîne est contenue dans une autre en C++](#vérifier-si-une-chaîne-est-contenue-dans-une-autre-en-C++)
-    9. [Lowercase/Uppercase en C++](#lowercaseuppercase-en-C++)
-    10. [Enlever un caractère d'une chaîne en C++](#enlever-un-caractère-dune-chaîne-en-C++)
-    11. [Concaténer deux chaînes de caractères en C++](#concaténer-deux-chaînes-de-caractères-en-C++)
-    12. [Comparer deux chaînes de caractères en C++](#comparer-deux-chaînes-de-caractères-en-C++)
-    13. [Comparer deux entiers en C++](#comparer-deux-entiers-en-C++)
-    14. [Récupérer la position d'une sous-chaîne dans une chaîne en C++](#récupérer-la-position-dune-sous-chaîne-dans-une-chaîne-en-C++)
-3. [Python](#python)
-    1. [Structure d'un fichier Python](#structure-dun-fichier-python)
-    2. [Récupérer le nombre de paramètres en Python](#récupérer-le-nombre-de-paramètres-en-Python)
-    3. [Récupérer les paramètres en Python](#récupérer-les-paramètres-en-Python)
-    4. [Connaître la taille d'une chaine de caractères en Python](#connaître-la-taille-dune-chaîne-de-caractères-en-Python)
-    5. [Boucles en Python](#boucles-en-Python)
-        1. [if else en Python](#if-else-en-Python)
-        2. [for en Python](#for-en-Python)
-    6. [Incrémenter une variable en Python](#incrémenter-une-variable-en-Python)
-    7. [Opérations mathématiques en Python](#opérations-mathématiques-en-Python)
-    8. [Vérifier si une chaîne est contenue dans une autre en Python](#vérifier-si-une-chaîne-est-contenue-dans-une-autre-en-Python)
-    9. [Lowercase/Uppercase en Python](#lowercaseuppercase-en-Python)
-    10. [Enlever un caractère d'une chaîne en Python](#enlever-un-caractère-dune-chaîne-en-Python)
-    11. [Concaténer deux chaînes de caractères en Python](#concaténer-deux-chaînes-de-caractères-en-Python)
-    12. [Comparer deux chaînes de caractères en Python](#comparer-deux-chaînes-de-caractères-en-Python)
-    13. [Comparer deux entiers en Python](#comparer-deux-entiers-en-Python)
-    14. [Récupérer la position d'une sous-chaîne dans une chaîne en Python](#récupérer-la-position-dune-sous-chaîne-dans-une-chaîne-en-Python)
-
+<TOCInline toc={toc} />
 
 ## Bash
 
