@@ -769,9 +769,9 @@ print(position)
 ```
 
 
-## Javascript <a id="javascript"></a>
+## JavaScript <a id="javascript"></a>
 
-### Structure d'un fichier Javascript <a id="structure-fichier-javascript"></a>
+### Structure d'un fichier JavaScript <a id="structure-fichier-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -779,7 +779,7 @@ print(position)
 # le reste du programme
 ```
 
-### Récupérer le nombre de paramètres en Javascript <a id="recuperer-nombre-parametres-javascript"></a>
+### Récupérer le nombre de paramètres en JavaScript <a id="recuperer-nombre-parametres-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -790,7 +790,7 @@ nbr = len(sys.argv) - 1
 print("Nombre de paramètres:", nbr)
 ```
 
-### Récupérer les paramètres en Javascript <a id="recuperer-parametres-javascript"></a>
+### Récupérer les paramètres en JavaScript <a id="recuperer-parametres-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -803,7 +803,7 @@ print("Le premier paramètre:", parametre1)
 print("Le second paramètre:", parametre2)
 ```
 
-### Connaître la taille d'une chaine de caractères en Javascript <a id="connaitre-taille-chaine-caracteres-javascript"></a>
+### Connaître la taille d'une chaine de caractères en JavaScript <a id="connaitre-taille-chaine-caracteres-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -813,9 +813,9 @@ input_string = input("Entrez une chaîne de caractères: ")
 print("La taille de la chaîne '{}': {}".format(input_string, len(input_string)))
 ```
 
-### Boucles en Javascript <a id="boucles-javascript"></a>
+### Boucles en JavaScript <a id="boucles-javascript"></a>
 
-#### if else en Javascript <a id="if-else-javascript"></a>
+#### if else en JavaScript <a id="if-else-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -832,7 +832,7 @@ else:
     print("Il y a plus de deux paramètres")
 ```
 
-#### for en Javascript <a id="for-javascript"></a>
+#### for en JavaScript <a id="for-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -848,7 +848,7 @@ for i in range(len(input_string)):
     print(input_string[i])
 ```
 
-### Incrémenter une variable en Javascript <a id="incrementer-variable-javascript"></a>
+### Incrémenter une variable en JavaScript <a id="incrementer-variable-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -861,7 +861,7 @@ for i in range(1, 6):
 print("Après incrémentation:", nbr)
 ```
 
-### Opérations mathématiques en Javascript <a id="operations-mathematiques-javascript"></a>
+### Opérations mathématiques en JavaScript <a id="operations-mathematiques-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -873,7 +873,7 @@ print("5 modulo 3:", 5 % 3)
 print("2 puissance 100:", 2 ** 100)
 ```
 
-### Vérifier si une chaîne est contenue dans une autre en Javascript <a id="verifier-si-chaine-contenue-dans-une-autre-javascript"></a>
+### Vérifier si une chaîne est contenue dans une autre en JavaScript <a id="verifier-si-chaine-contenue-dans-une-autre-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -885,7 +885,7 @@ if sousChaine in chaine:
     print("'{}' contient '{}'".format(chaine, sousChaine))
 ```
 
-### Lowercase/Uppercase en Javascript <a id="lowercase-uppercase-javascript"></a>
+### Lowercase/Uppercase en JavaScript <a id="lowercase-uppercase-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -899,7 +899,7 @@ print("{} en lowercase: {}".format(chaine, lowercase))
 print("{} en uppercase: {}".format(chaine, uppercase))
 ```
 
-### Enlever un caractère d'une chaîne en Javascript <a id="enlever-caractere-chaine-javascript"></a>
+### Enlever un caractère d'une chaîne en JavaScript <a id="enlever-caractere-chaine-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -911,7 +911,7 @@ print("Chaîne de départ:", chaine)
 print("Chaîne modifiée:", chaineModifiee)
 ```
 
-### Concaténer deux chaînes de caractères en Javascript <a id="concatener-deux-chaines-javascript"></a>
+### Concaténer deux chaînes de caractères en JavaScript <a id="concatener-deux-chaines-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -926,7 +926,7 @@ print("Chaine 2: '{}'".format(chaine2))
 print("Concaténation: '{}'".format(concatenation))
 ```
 
-### Comparer deux chaînes de caractères en Javascript <a id="comparer-deux-chaines-javascript"></a>
+### Comparer deux chaînes de caractères en JavaScript <a id="comparer-deux-chaines-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -943,7 +943,7 @@ else:
     print("{} != {}".format(chaine1, chaine2))
 ```
 
-### Comparer deux entiers en Javascript <a id="comparer-deux-entiers-javascript"></a>
+### Comparer deux entiers en JavaScript <a id="comparer-deux-entiers-javascript"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -963,7 +963,7 @@ if nbr <= 4 or nbr < 4:
     print("{} <= 4, {} < 4".format(nbr, nbr))
 ```
 
-### Récupérer la position d'une sous-chaîne dans une chaîne en Javascript <a id="recuperer-position-sous-chaine-dans-chaine-javascript"></a>
+### Récupérer la position d'une sous-chaîne dans une chaîne en JavaScript <a id="recuperer-position-sous-chaine-dans-chaine-javascript"></a>
 
 ```python
 chaine = "<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16"
