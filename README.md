@@ -37,7 +37,6 @@
      * [Comparer deux entiers en C++](#comparer-deux-entiers-c++)
      * [Récupérer la position d'une sous-chaîne dans une chaîne en C++](#recuperer-position-sous-chaine-dans-chaine-c++)
 * [JavaScript](#javascript)
-     * [Structure d'un fichier JavaScript](#structure-fichier-javascript)
      * [Récupérer le nombre de paramètres en JavaScript](#recuperer-nombre-parametres-javascript)
      * [Récupérer les paramètres en JavaScript](#recuperer-parametres-javascript)
      * [Connaître la taille d'une chaine de caractères en JavaScript](#connaitre-taille-chaine-caracteres-javascript)
@@ -566,206 +565,189 @@ int main() {
 
 ## JavaScript <a id="javascript"></a>
 
-### Structure d'un fichier JavaScript <a id="structure-fichier-javascript"></a>
-
-```python
-#!/usr/bin/env python3
-
-# le reste du programme
-```
-
 ### Récupérer le nombre de paramètres en JavaScript <a id="recuperer-nombre-parametres-javascript"></a>
 
-```python
-#!/usr/bin/env python3
-
-import sys
-
-nbr = len(sys.argv) - 1
-print("Nombre de paramètres:", nbr)
+```javascript
+const nbr = process.argv.length - 2;
+console.log("Nombre de paramètres:", nbr);
 ```
 
 ### Récupérer les paramètres en JavaScript <a id="recuperer-parametres-javascript"></a>
 
-```python
-#!/usr/bin/env python3
-
-import sys
-
-parametre1 = sys.argv[1]
-parametre2 = sys.argv[2]
-print("Le premier paramètre:", parametre1)
-print("Le second paramètre:", parametre2)
+```javascript
+const parametre1 = process.argv[2];
+const parametre2 = process.argv[3];
+console.log("Le premier paramètre:", parametre1);
+console.log("Le second paramètre:", parametre2);
 ```
 
 ### Connaître la taille d'une chaine de caractères en JavaScript <a id="connaitre-taille-chaine-caracteres-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-input_string = input("Entrez une chaîne de caractères: ")
-
-print("La taille de la chaîne '{}': {}".format(input_string, len(input_string)))
+readline.question("Entrez une chaîne de caractères: ", (input_string) => {
+    console.log(`La taille de la chaîne '${input_string}': ${input_string.length}`);
+    readline.close();
+});
 ```
 
 ### Boucles en JavaScript <a id="boucles-javascript"></a>
 
 #### if else en JavaScript <a id="if-else-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const nbr = process.argv.length - 2;
 
-import sys
-
-nbr = len(sys.argv) - 1
-
-if nbr == 1:
-    print("Il y a un seul paramètre")
-elif nbr == 2:
-    print("Il y a deux paramètres")
-else:
-    print("Il y a plus de deux paramètres")
+if (nbr === 1) {
+    console.log("Il y a un seul paramètre");
+} else if (nbr === 2) {
+    console.log("Il y a deux paramètres");
+} else {
+    console.log("Il y a plus de deux paramètres");
+}
 ```
 
 #### for en JavaScript <a id="for-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const readline = require('readline').createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-input_string = input("Entrez une chaîne de caractères: ")
+readline.question("Entrez une chaîne de caractères: ", (input_string) => {
+  console.log("Méthode 1:");
+  for (const char of input_string) {
+      console.log(char);
+  }
 
-print("Méthode 1:")
-for char in input_string:
-    print(char)
+  console.log("Méthode 2:");
+  for (let i = 0; i < input_string.length; i++) {
+      console.log(input_string[i]);
+  }
 
-print("Méthode 2:")
-for i in range(len(input_string)):
-    print(input_string[i])
+  readline.close();
+});
 ```
 
 ### Incrémenter une variable en JavaScript <a id="incrementer-variable-javascript"></a>
 
-```python
-#!/usr/bin/env python3
-
-nbr = 0
-print("Avant incrémentation:", nbr)
-for i in range(1, 6):
-    nbr += 1
-
-print("Après incrémentation:", nbr)
+```javascript
+let nbr = 0;
+console.log("Avant incrémentation:", nbr);
+for (let i = 1; i <= 5; i++) {
+    nbr++;
+}
+console.log("Après incrémentation:", nbr);
 ```
 
 ### Opérations mathématiques en JavaScript <a id="operations-mathematiques-javascript"></a>
 
-```python
-#!/usr/bin/env python3
-
-print("5 plus 3 =", 5 + 3)
-print("5 fois 3 =", 5 * 3)
-print("5 puissance 3:", 5 ** 3)
-print("5 modulo 3:", 5 % 3)
-print("2 puissance 100:", 2 ** 100)
+```javascript
+console.log("5 plus 3 =", 5 + 3);
+console.log("5 fois 3 =", 5 * 3);
+console.log("5 puissance 3:", 5 ** 3);
+console.log("5 modulo 3:", 5 % 3);
+console.log("2 puissance 100:", 2 ** 100);
 ```
 
 ### Vérifier si une chaîne est contenue dans une autre en JavaScript <a id="verifier-si-chaine-contenue-dans-une-autre-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const chaine = "coucou";
+const sousChaine = "ou";
 
-chaine = "coucou"
-sousChaine = "ou"
-
-if sousChaine in chaine:
-    print("'{}' contient '{}'".format(chaine, sousChaine))
+if (chaine.includes(sousChaine)) {
+    console.log(`'${chaine}' contient '${sousChaine}'`);
+}
 ```
 
 ### Lowercase/Uppercase en JavaScript <a id="lowercase-uppercase-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const chaine = "CouCou";
 
-chaine = "CouCou"
+const lowercase = chaine.toLowerCase();
+const uppercase = chaine.toUpperCase();
 
-lowercase = chaine.lower()
-uppercase = chaine.upper()
-
-print("{} en lowercase: {}".format(chaine, lowercase))
-print("{} en uppercase: {}".format(chaine, uppercase))
+console.log(`${chaine} en lowercase: ${lowercase}`);
+console.log(`${chaine} en uppercase: ${uppercase}`);
 ```
 
 ### Enlever un caractère d'une chaîne en JavaScript <a id="enlever-caractere-chaine-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const chaine = "coucou";
+const chaineModifiee = chaine.replace('c', '');
 
-chaine = "coucou"
-chaineModifiee = chaine.replace('c', '')
-
-print("Chaîne de départ:", chaine)
-print("Chaîne modifiée:", chaineModifiee)
+console.log("Chaîne de départ:", chaine);
+console.log("Chaîne modifiée:", chaineModifiee);
 ```
 
 ### Concaténer deux chaînes de caractères en JavaScript <a id="concatener-deux-chaines-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const chaine1 = "Hello, ";
+const chaine2 = "World!";
 
-chaine1 = "Hello, "
-chaine2 = "World!"
+const concatenation = chaine1 + chaine2;
 
-concatenation = chaine1 + chaine2
-
-print("Chaine 1: '{}'".format(chaine1))
-print("Chaine 2: '{}'".format(chaine2))
-print("Concaténation: '{}'".format(concatenation))
+console.log("Chaine 1: '", chaine1, "'");
+console.log("Chaine 2: '", chaine2, "'");
+console.log("Concaténation: '", concatenation, "'");
 ```
 
 ### Comparer deux chaînes de caractères en JavaScript <a id="comparer-deux-chaines-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const chaine1 = "coucou";
+const chaine2 = "CouCou";
 
-chaine1 = "coucou"
-chaine2 = "CouCou"
+if (chaine1 === "coucou") {
+    console.log(`${chaine1} = coucou`);
+}
 
-if chaine1 == "coucou":
-    print("{} = coucou".format(chaine1))
-
-if chaine1 == chaine2:
-    print("{} = {}".format(chaine1, chaine2))
-else:
-    print("{} != {}".format(chaine1, chaine2))
+if (chaine1 === chaine2) {
+    console.log(`${chaine1} = ${chaine2}`);
+} else {
+    console.log(`${chaine1} != ${chaine2}`);
+}
 ```
 
 ### Comparer deux entiers en JavaScript <a id="comparer-deux-entiers-javascript"></a>
 
-```python
-#!/usr/bin/env python3
+```javascript
+const nbr = 3;
 
-nbr = 3
+if (nbr === 3) {
+    console.log(`${nbr} = 3`);
+}
 
-if nbr == 3:
-    print("{} = 3".format(nbr))
+if (nbr !== 5) {
+    console.log(`${nbr} != 5`);
+}
 
-if nbr != 5:
-    print("{} != 5".format(nbr))
+if (nbr >= 2 || nbr > 2) {
+    console.log(`${nbr} >= 2, ${nbr} > 2`);
+}
 
-if nbr >= 2 or nbr > 2:
-    print("{} >= 2, {} > 2".format(nbr, nbr))
-
-if nbr <= 4 or nbr < 4:
-    print("{} <= 4, {} < 4".format(nbr, nbr))
+if (nbr <= 4 || nbr < 4) {
+    console.log(`${nbr} <= 4, ${nbr} < 4`);
+}
 ```
 
 ### Récupérer la position d'une sous-chaîne dans une chaîne en JavaScript <a id="recuperer-position-sous-chaine-dans-chaine-javascript"></a>
 
-```python
-chaine = "<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16"
-# recherche de la première position de la chaine "16"
-recherche = "16"
-position = chaine.find(recherche) + 1
-print(position)
+```javascript
+const chaine = "<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16";
+// recherche de la première position de la chaine "16"
+const recherche = "16";
+const position = chaine.indexOf(recherche) + 1;
+console.log(position);
 ```
 
 ## Python <a id="python"></a>
