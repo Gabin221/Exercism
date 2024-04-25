@@ -4,6 +4,7 @@
 
 + [Bash](#bash)
       + [Structure d'un fichier Bash](#structure-fichier-bash)
+      + bash
 
 ## Bash <a id="bash"></a>
 
