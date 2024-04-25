@@ -4,8 +4,6 @@
 
 * [Bash](#bash)
      * [Structure d'un fichier Bash](#structure-fichier-bash)
-     * bash
-       * sous bash
 
 ## Bash <a id="bash"></a>
 
@@ -17,7 +15,7 @@
 # le reste du programme
 ```
 
-### Récupérer le nombre de paramètres
+### Récupérer le nombre de paramètres en Bash <a id="recuperer-nombre-parametres-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -26,7 +24,7 @@ nbr=$#
 echo "Nombre de paramètres: ${nbr}"
 ```
 
-### Récupérer les paramètres
+### Récupérer les paramètres <a id="recuperer-parametres-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -37,7 +35,7 @@ echo "Le premier paramètre: ${parametre1}"
 echo "Le second paramètre: ${parametre2}"
 ```
 
-### Connaître la taille d'une chaine de caractères
+### Connaître la taille d'une chaine de caractères en Bash <a id="connaitre-taille-chaine-caracteres-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -47,9 +45,9 @@ input=$1
 echo "La taille de la chaîne '${input}' est: ${#input}"
 ```
 
-### Boucles
+### Boucles en Bash <a id="boucles-bash"></a>
 
-#### if else
+#### if else en Bash <a id="if-else-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -66,7 +64,7 @@ else
 fi
 ```
 
-#### for
+#### for en Bash <a id="for-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -86,7 +84,7 @@ do
 done
 ```
 
-### Incrémenter une variable
+### Incrémenter une variable en Bash <a id="incrementer-variable-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -101,7 +99,7 @@ done
 echo "Après incrémentation: ${nbr}"
 ```
 
-### Opérations mathématiques
+### Opérations mathématiques en Bash <a id="operations-mathematiques-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -114,7 +112,7 @@ echo "2 puissance 100 avec bc: $(echo "2 ^ 100" | bc)"
 echo "2 puissance 100 sans bc: $((2**100))"
 ```
 
-### Vérifier si une chaîne est contenue dans une autre
+### Vérifier si une chaîne est contenue dans une autre en Bash <a id="verifier-si-chaine-contenue-dans-une-autre-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -135,7 +133,7 @@ then
 fi
 ```
 
-### Lowercase/Uppercase
+### Lowercase/Uppercase en Bash <a id="lowercase-uppercase-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -149,7 +147,7 @@ echo "${chaine} en lowercase: ${lowercase}"
 echo "${chaine} en uppercase: ${uppercase}"
 ```
 
-### Enlever un caractère d'une chaîne
+### Enlever un caractère d'une chaîne en Bash <a id="enlever-caractere-chaine-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -161,7 +159,7 @@ echo "chaîne de départ: ${chaine}"
 echo "chaine modifiée: ${chaineModifiee}"
 ```
 
-### Concaténer deux chaînes de caractères
+### Concaténer deux chaînes de caractères en Bash <a id="concatener-deux-chaine-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -176,7 +174,7 @@ echo "chaine 2: '${chaine2}'"
 echo "concaténation: '${concatenation}'"
 ```
 
-### Comparer deux chaînes de caractères
+### Comparer deux chaînes de caractères en Bash <a id="comparer-deux-chaines-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -196,7 +194,7 @@ else
 fi
 ```
 
-### Comparer deux entiers
+### Comparer deux entiers en Bash <a id="comparer-deux-entiers-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -220,7 +218,7 @@ then
 fi
 ```
 
-### Récupérer la position d'une sous-chaîne dans une chaîne
+### Récupérer la position d'une sous-chaîne dans une chaîne en Bash <a id="recuperer-possition-sous-chaine-dans-chaine-bash"></a>
 
 ```bash
 chaine="<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16"
