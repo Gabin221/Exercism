@@ -53,6 +53,23 @@
      * [Comparer deux chaînes de caractères en Python](#comparer-deux-chaines-python)
      * [Comparer deux entiers en Python](#comparer-deux-entiers-python)
      * [Récupérer la position d'une sous-chaîne dans une chaîne en Python](#recuperer-position-sous-chaine-dans-chaine-python)
+* [JavaScript](#javascript)
+     * [Structure d'un fichier JavaScript](#structure-fichier-javascript)
+     * [Récupérer le nombre de paramètres en JavaScript](#recuperer-nombre-parametres-javascript)
+     * [Récupérer les paramètres en JavaScript](#recuperer-parametres-javascript)
+     * [Connaître la taille d'une chaine de caractères en JavaScript](#connaitre-taille-chaine-caracteres-javascript)
+     * [Boucles en JavaScript](#boucles-javascript)
+       * [if else en JavaScript](#if-else-javascript)
+       * [for en JavaScript](#for-javascript)
+     * [Incrémenter une variable en JavaScript](#incrementer-variable-javascript)
+     * [Opérations mathématiques en JavaScript](#operations-mathematiques-javascript)
+     * [Vérifier si une chaîne est contenue dans une autre en JavaScript](#verifier-si-chaine-contenue-dans-une-autre-javascript)
+     * [Lowercase/Uppercase en JavaScript](#lowercase-uppercase-javascript)
+     * [Enlever un caractère d'une chaîne en JavaScript](#enlever-caractere-chaine-javascript)
+     * [Concaténer deux chaînes de caractères en JavaScript](#concatener-deux-chaines-javascript)
+     * [Comparer deux chaînes de caractères en JavaScript](#comparer-deux-chaines-javascript)
+     * [Comparer deux entiers en JavaScript](#comparer-deux-entiers-javascript)
+     * [Récupérer la position d'une sous-chaîne dans une chaîne en JavaScript](#recuperer-position-sous-chaine-dans-chaine-javascript)
 
 ## Bash <a id="bash"></a>
 
@@ -742,6 +759,211 @@ if nbr <= 4 or nbr < 4:
 ```
 
 ### Récupérer la position d'une sous-chaîne dans une chaîne en Python <a id="recuperer-position-sous-chaine-dans-chaine-python"></a>
+
+```python
+chaine = "<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16"
+# recherche de la première position de la chaine "16"
+recherche = "16"
+position = chaine.find(recherche) + 1
+print(position)
+```
+
+
+## Javascript <a id="javascript"></a>
+
+### Structure d'un fichier Javascript <a id="structure-fichier-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+# le reste du programme
+```
+
+### Récupérer le nombre de paramètres en Javascript <a id="recuperer-nombre-parametres-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+import sys
+
+nbr = len(sys.argv) - 1
+print("Nombre de paramètres:", nbr)
+```
+
+### Récupérer les paramètres en Javascript <a id="recuperer-parametres-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+import sys
+
+parametre1 = sys.argv[1]
+parametre2 = sys.argv[2]
+print("Le premier paramètre:", parametre1)
+print("Le second paramètre:", parametre2)
+```
+
+### Connaître la taille d'une chaine de caractères en Javascript <a id="connaitre-taille-chaine-caracteres-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+input_string = input("Entrez une chaîne de caractères: ")
+
+print("La taille de la chaîne '{}': {}".format(input_string, len(input_string)))
+```
+
+### Boucles en Javascript <a id="boucles-javascript"></a>
+
+#### if else en Javascript <a id="if-else-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+import sys
+
+nbr = len(sys.argv) - 1
+
+if nbr == 1:
+    print("Il y a un seul paramètre")
+elif nbr == 2:
+    print("Il y a deux paramètres")
+else:
+    print("Il y a plus de deux paramètres")
+```
+
+#### for en Javascript <a id="for-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+input_string = input("Entrez une chaîne de caractères: ")
+
+print("Méthode 1:")
+for char in input_string:
+    print(char)
+
+print("Méthode 2:")
+for i in range(len(input_string)):
+    print(input_string[i])
+```
+
+### Incrémenter une variable en Javascript <a id="incrementer-variable-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+nbr = 0
+print("Avant incrémentation:", nbr)
+for i in range(1, 6):
+    nbr += 1
+
+print("Après incrémentation:", nbr)
+```
+
+### Opérations mathématiques en Javascript <a id="operations-mathematiques-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+print("5 plus 3 =", 5 + 3)
+print("5 fois 3 =", 5 * 3)
+print("5 puissance 3:", 5 ** 3)
+print("5 modulo 3:", 5 % 3)
+print("2 puissance 100:", 2 ** 100)
+```
+
+### Vérifier si une chaîne est contenue dans une autre en Javascript <a id="verifier-si-chaine-contenue-dans-une-autre-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+chaine = "coucou"
+sousChaine = "ou"
+
+if sousChaine in chaine:
+    print("'{}' contient '{}'".format(chaine, sousChaine))
+```
+
+### Lowercase/Uppercase en Javascript <a id="lowercase-uppercase-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+chaine = "CouCou"
+
+lowercase = chaine.lower()
+uppercase = chaine.upper()
+
+print("{} en lowercase: {}".format(chaine, lowercase))
+print("{} en uppercase: {}".format(chaine, uppercase))
+```
+
+### Enlever un caractère d'une chaîne en Javascript <a id="enlever-caractere-chaine-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+chaine = "coucou"
+chaineModifiee = chaine.replace('c', '')
+
+print("Chaîne de départ:", chaine)
+print("Chaîne modifiée:", chaineModifiee)
+```
+
+### Concaténer deux chaînes de caractères en Javascript <a id="concatener-deux-chaines-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+chaine1 = "Hello, "
+chaine2 = "World!"
+
+concatenation = chaine1 + chaine2
+
+print("Chaine 1: '{}'".format(chaine1))
+print("Chaine 2: '{}'".format(chaine2))
+print("Concaténation: '{}'".format(concatenation))
+```
+
+### Comparer deux chaînes de caractères en Javascript <a id="comparer-deux-chaines-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+chaine1 = "coucou"
+chaine2 = "CouCou"
+
+if chaine1 == "coucou":
+    print("{} = coucou".format(chaine1))
+
+if chaine1 == chaine2:
+    print("{} = {}".format(chaine1, chaine2))
+else:
+    print("{} != {}".format(chaine1, chaine2))
+```
+
+### Comparer deux entiers en Javascript <a id="comparer-deux-entiers-javascript"></a>
+
+```python
+#!/usr/bin/env python3
+
+nbr = 3
+
+if nbr == 3:
+    print("{} = 3".format(nbr))
+
+if nbr != 5:
+    print("{} != 5".format(nbr))
+
+if nbr >= 2 or nbr > 2:
+    print("{} >= 2, {} > 2".format(nbr, nbr))
+
+if nbr <= 4 or nbr < 4:
+    print("{} <= 4, {} < 4".format(nbr, nbr))
+```
+
+### Récupérer la position d'une sous-chaîne dans une chaîne en Javascript <a id="recuperer-position-sous-chaine-dans-chaine-javascript"></a>
 
 ```python
 chaine = "<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16"
