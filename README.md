@@ -15,44 +15,44 @@
      * [Vérifier si une chaîne est contenue dans une autre en Bash](#verifier-si-chaine-contenue-dans-une-autre-bash)
      * [Lowercase/Uppercase en Bash](#lowercase-uppercase-bash)
      * [Enlever un caractère d'une chaîne en Bash](#enlever-caractere-chaine-bash)
-     * [Concaténer deux chaînes de caractères en Bash](#concatener-deux-chaine-bash)
+     * [Concaténer deux chaînes de caractères en Bash](#concatener-deux-chaines-bash)
      * [Comparer deux chaînes de caractères en Bash](#comparer-deux-chaines-bash)
      * [Comparer deux entiers en Bash](#comparer-deux-entiers-bash)
-     * [Récupérer la position d'une sous-chaîne dans une chaîne en Bash](#recuperer-possition-sous-chaine-dans-chaine-bash)
-* [C++](#bash)
-     * [Structure d'un fichier Bash](#structure-fichier-bash)
-     * [Récupérer le nombre de paramètres en Bash](#recuperer-nombre-parametres-bash)
-     * [Récupérer les paramètres en Bash](#recuperer-parametres-bash)
-     * [Connaître la taille d'une chaine de caractères en Bash](#connaitre-taille-chaine-caracteres-bash)
-     * [Boucles en Bash](#boucles-bash)
-       * [if else en Bash](#if-else-bash)
-       * [for en Bash](#for-bash)
-     * [Incrémenter une variable en Bash](#incrementer-variable-bash)
-     * [Opérations mathématiques en Bash](#operations-mathematiques-bash)
-     * [Vérifier si une chaîne est contenue dans une autre en Bash](#verifier-si-chaine-contenue-dans-une-autre-bash)
-     * [Lowercase/Uppercase en Bash](#lowercase-uppercase-bash)
-     * [Enlever un caractère d'une chaîne en Bash](#enlever-caractere-chaine-bash)
-     * [Concaténer deux chaînes de caractères en Bash](#concatener-deux-chaine-bash)
-     * [Comparer deux chaînes de caractères en Bash](#comparer-deux-chaines-bash)
-     * [Comparer deux entiers en Bash](#comparer-deux-entiers-bash)
-     * [Récupérer la position d'une sous-chaîne dans une chaîne en Bash](#recuperer-possition-sous-chaine-dans-chaine-bash)
-* [Python](#bash)
-     * [Structure d'un fichier Bash](#structure-fichier-bash)
-     * [Récupérer le nombre de paramètres en Bash](#recuperer-nombre-parametres-bash)
-     * [Récupérer les paramètres en Bash](#recuperer-parametres-bash)
-     * [Connaître la taille d'une chaine de caractères en Bash](#connaitre-taille-chaine-caracteres-bash)
-     * [Boucles en Bash](#boucles-bash)
-       * [if else en Bash](#if-else-bash)
-       * [for en Bash](#for-bash)
-     * [Incrémenter une variable en Bash](#incrementer-variable-bash)
-     * [Opérations mathématiques en Bash](#operations-mathematiques-bash)
-     * [Vérifier si une chaîne est contenue dans une autre en Bash](#verifier-si-chaine-contenue-dans-une-autre-bash)
-     * [Lowercase/Uppercase en Bash](#lowercase-uppercase-bash)
-     * [Enlever un caractère d'une chaîne en Bash](#enlever-caractere-chaine-bash)
-     * [Concaténer deux chaînes de caractères en Bash](#concatener-deux-chaine-bash)
-     * [Comparer deux chaînes de caractères en Bash](#comparer-deux-chaines-bash)
-     * [Comparer deux entiers en Bash](#comparer-deux-entiers-bash)
-     * [Récupérer la position d'une sous-chaîne dans une chaîne en Bash](#recuperer-possition-sous-chaine-dans-chaine-bash)
+     * [Récupérer la position d'une sous-chaîne dans une chaîne en Bash](#recuperer-position-sous-chaine-dans-chaine-bash)
+* [C++](#c++)
+     * [Structure d'un fichier C++](#structure-fichier-c++)
+     * [Récupérer le nombre de paramètres en C++](#recuperer-nombre-parametres-c++)
+     * [Récupérer les paramètres en C++](#recuperer-parametres-c++)
+     * [Connaître la taille d'une chaine de caractères en C++](#connaitre-taille-chaine-caracteres-c++)
+     * [Boucles en C++](#boucles-c++)
+       * [if else en C++](#if-else-c++)
+       * [for en C++](#for-c++)
+     * [Incrémenter une variable en C++](#incrementer-variable-c++)
+     * [Opérations mathématiques en C++](#operations-mathematiques-c++)
+     * [Vérifier si une chaîne est contenue dans une autre en C++](#verifier-si-chaine-contenue-dans-une-autre-c++)
+     * [Lowercase/Uppercase en C++](#lowercase-uppercase-c++)
+     * [Enlever un caractère d'une chaîne en C++](#enlever-caractere-chaine-c++)
+     * [Concaténer deux chaînes de caractères en C++](#concatener-deux-chaines-c++)
+     * [Comparer deux chaînes de caractères en C++](#comparer-deux-chaines-c++)
+     * [Comparer deux entiers en C++](#comparer-deux-entiers-c++)
+     * [Récupérer la position d'une sous-chaîne dans une chaîne en C++](#recuperer-position-sous-chaine-dans-chaine-c++)
+* [Python](#python)
+     * [Structure d'un fichier Python](#structure-fichier-python)
+     * [Récupérer le nombre de paramètres en Python](#recuperer-nombre-parametres-python)
+     * [Récupérer les paramètres en Python](#recuperer-parametres-python)
+     * [Connaître la taille d'une chaine de caractères en Python](#connaitre-taille-chaine-caracteres-python)
+     * [Boucles en Python](#boucles-python)
+       * [if else en Python](#if-else-python)
+       * [for en Python](#for-python)
+     * [Incrémenter une variable en Python](#incrementer-variable-python)
+     * [Opérations mathématiques en Python](#operations-mathematiques-python)
+     * [Vérifier si une chaîne est contenue dans une autre en Python](#verifier-si-chaine-contenue-dans-une-autre-python)
+     * [Lowercase/Uppercase en Python](#lowercase-uppercase-python)
+     * [Enlever un caractère d'une chaîne en Python](#enlever-caractere-chaine-python)
+     * [Concaténer deux chaînes de caractères en Python](#concatener-deux-chaines-python)
+     * [Comparer deux chaînes de caractères en Python](#comparer-deux-chaines-python)
+     * [Comparer deux entiers en Python](#comparer-deux-entiers-python)
+     * [Récupérer la position d'une sous-chaîne dans une chaîne en Python](#recuperer-position-sous-chaine-dans-chaine-python)
 
 ## Bash <a id="bash"></a>
 
@@ -208,7 +208,7 @@ echo "chaîne de départ: ${chaine}"
 echo "chaine modifiée: ${chaineModifiee}"
 ```
 
-### Concaténer deux chaînes de caractères en Bash <a id="concatener-deux-chaine-bash"></a>
+### Concaténer deux chaînes de caractères en Bash <a id="concatener-deux-chaines-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
@@ -267,7 +267,7 @@ then
 fi
 ```
 
-### Récupérer la position d'une sous-chaîne dans une chaîne en Bash <a id="recuperer-possition-sous-chaine-dans-chaine-bash"></a>
+### Récupérer la position d'une sous-chaîne dans une chaîne en Bash <a id="recuperer-position-sous-chaine-dans-chaine-bash"></a>
 
 ```bash
 chaine="<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16"
@@ -278,9 +278,9 @@ position=$((${#debut_chaine}+1))
 echo ${position}
 ```
 
-## C++
+## C++ <a id="c++"></a>
 
-### Structure d'un fichier C++
+### Structure d'un fichier C++ en C++ <a id="structure-fichier-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -291,7 +291,7 @@ int main() {
 }
 ```
 
-### Récupérer le nombre de paramètres
+### Récupérer le nombre de paramètres en C++ <a id="recuperer-nombre-parametres-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -303,7 +303,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-### Récupérer les paramètres
+### Récupérer les paramètres en C++ <a id="recuperer-parametres-bash"></a>
 
 ```cpp
 #include <iostream>
@@ -317,7 +317,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-### Connaître la taille d'une chaine de caractères
+### Connaître la taille d'une chaine de caractères en C++ <a id="connaitre-taille-chaine-caracteres-bash"></a>
 
 ```cpp
 #include <iostream>
@@ -330,9 +330,9 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-### Boucles
+### Boucles en C++ <a id="boucles-c++"></a>
 
-#### if else
+#### if else en C++ <a id="if-else-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -350,7 +350,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-#### for
+#### for en C++ <a id="for-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -373,7 +373,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-### Incrémenter une variable
+### Incrémenter une variable en C++ <a id="incrementer-variable-c+"></a>
 
 ```cpp
 #include <iostream>
@@ -389,7 +389,7 @@ int main() {
 }
 ```
 
-### Opérations mathématiques
+### Opérations mathématiques en C++ <a id="operations-mathematiques-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -403,7 +403,7 @@ int main() {
 }
 ```
 
-### Vérifier si une chaîne est contenue dans une autre
+### Vérifier si une chaîne est contenue dans une autre en C++ <a id="verifier-si-chaine-contenue-dans-une-autre-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -427,7 +427,7 @@ int main() {
 }
 ```
 
-### Lowercase/Uppercase
+### Lowercase/Uppercase en C++ <a id="lowercase-uppercase-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -447,7 +447,7 @@ int main() {
 }
 ```
 
-### Enlever un caractère d'une chaîne
+### Enlever un caractère d'une chaîne en C++ <a id="enlever-caractere-chaine-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -463,7 +463,7 @@ int main() {
 }
 ```
 
-### Concaténer deux chaînes de caractères
+### Concaténer deux chaînes de caractères en C++ <a id="concatener-deux-chaines-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -482,7 +482,7 @@ int main() {
 }
 ```
 
-### Comparer deux chaînes de caractères
+### Comparer deux chaînes de caractères en C++ <a id="comparer-deux-chaines-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -505,7 +505,7 @@ int main() {
 }
 ```
 
-### Comparer deux entiers
+### Comparer deux entiers en C++ <a id="comparer-deux-entiers-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -530,7 +530,7 @@ int main() {
 }
 ```
 
-### Récupérer la position d'une sous-chaîne dans une chaîne
+### Récupérer la position d'une sous-chaîne dans une chaîne en C++ <a id="recuperer-position-sous-chaine-dans-chaine-c++"></a>
 
 ```cpp
 #include <iostream>
@@ -547,9 +547,9 @@ int main() {
 }
 ```
 
-## Python
+## Python <a id="python"></a>
 
-### Structure d'un fichier Python
+### Structure d'un fichier Python <a id="structure-fichier-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -557,7 +557,7 @@ int main() {
 # le reste du programme
 ```
 
-### Récupérer le nombre de paramètres
+### Récupérer le nombre de paramètres en Python <a id="recuperer-nombre-parametres-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -568,7 +568,7 @@ nbr = len(sys.argv) - 1
 print("Nombre de paramètres:", nbr)
 ```
 
-### Récupérer les paramètres
+### Récupérer les paramètres en Python <a id="recuperer-parametres-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -581,7 +581,7 @@ print("Le premier paramètre:", parametre1)
 print("Le second paramètre:", parametre2)
 ```
 
-### Connaître la taille d'une chaine de caractères
+### Connaître la taille d'une chaine de caractères en Python <a id="connaitre-taille-chaine-caracteres-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -591,9 +591,9 @@ input_string = input("Entrez une chaîne de caractères: ")
 print("La taille de la chaîne '{}': {}".format(input_string, len(input_string)))
 ```
 
-### Boucles
+### Boucles en Python <a id="boucles-python"></a>
 
-#### if else
+#### if else en Python <a id="if-else-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -610,7 +610,7 @@ else:
     print("Il y a plus de deux paramètres")
 ```
 
-#### for
+#### for en Python <a id="for-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -626,7 +626,7 @@ for i in range(len(input_string)):
     print(input_string[i])
 ```
 
-### Incrémenter une variable
+### Incrémenter une variable en Python <a id="incrementer-variable-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -639,7 +639,7 @@ for i in range(1, 6):
 print("Après incrémentation:", nbr)
 ```
 
-### Opérations mathématiques
+### Opérations mathématiques en Python <a id="operations-mathematiques-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -651,7 +651,7 @@ print("5 modulo 3:", 5 % 3)
 print("2 puissance 100:", 2 ** 100)
 ```
 
-### Vérifier si une chaîne est contenue dans une autre
+### Vérifier si une chaîne est contenue dans une autre en Python <a id="verifier-si-chaine-contenue-dans-une-autre-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -663,7 +663,7 @@ if sousChaine in chaine:
     print("'{}' contient '{}'".format(chaine, sousChaine))
 ```
 
-### Lowercase/Uppercase
+### Lowercase/Uppercase en Python <a id="lowercase-uppercase-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -677,7 +677,7 @@ print("{} en lowercase: {}".format(chaine, lowercase))
 print("{} en uppercase: {}".format(chaine, uppercase))
 ```
 
-### Enlever un caractère d'une chaîne
+### Enlever un caractère d'une chaîne en Python <a id="enlever-caractere-chaine-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -689,7 +689,7 @@ print("Chaîne de départ:", chaine)
 print("Chaîne modifiée:", chaineModifiee)
 ```
 
-### Concaténer deux chaînes de caractères
+### Concaténer deux chaînes de caractères en Python <a id="concatener-deux-chaines-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -704,7 +704,7 @@ print("Chaine 2: '{}'".format(chaine2))
 print("Concaténation: '{}'".format(concatenation))
 ```
 
-### Comparer deux chaînes de caractères
+### Comparer deux chaînes de caractères en Python <a id="comparer-deux-chaines-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -721,7 +721,7 @@ else:
     print("{} != {}".format(chaine1, chaine2))
 ```
 
-### Comparer deux entiers
+### Comparer deux entiers en Python <a id="comparer-deux-entiers-python"></a>
 
 ```python
 #!/usr/bin/env python3
@@ -741,7 +741,7 @@ if nbr <= 4 or nbr < 4:
     print("{} <= 4, {} < 4".format(nbr, nbr))
 ```
 
-### Récupérer la position d'une sous-chaîne dans une chaîne
+### Récupérer la position d'une sous-chaîne dans une chaîne en Python <a id="recuperer-position-sous-chaine-dans-chaine-python"></a>
 
 ```python
 chaine = "<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16"
