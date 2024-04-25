@@ -224,6 +224,275 @@ position=$((${#debut_chaine}+1))
 echo ${position}
 ```
 
+## C++
+
+### Structure d'un fichier C++
+
+```cpp
+#include <iostream>
+
+int main() {
+    // le reste du programme
+    return 0;
+}
+```
+
+### Récupérer le nombre de paramètres
+
+```cpp
+#include <iostream>
+
+int main(int argc, char *argv[]) {
+    int nbr = argc - 1;
+    std::cout << "Nombre de paramètres: " << nbr << std::endl;
+    return 0;
+}
+```
+
+### Récupérer les paramètres
+
+```cpp
+#include <iostream>
+
+int main(int argc, char *argv[]) {
+    if (argc >= 3) {
+        std::cout << "Le premier paramètre: " << argv[1] << std::endl;
+        std::cout << "Le second paramètre: " << argv[2] << std::endl;
+    }
+    return 0;
+}
+```
+
+### Connaître la taille d'une chaine de caractères
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main(int argc, char *argv[]) {
+    std::string input = argv[1];
+    std::cout << "La taille de la chaîne '" << input << "' est: " << input.size() << std::endl;
+    return 0;
+}
+```
+
+### Boucles
+
+#### if else
+
+```cpp
+#include <iostream>
+
+int main(int argc, char *argv[]) {
+    int nbr = argc - 1;
+    if (nbr == 1) {
+        std::cout << "Il y a un seul paramètre" << std::endl;
+    } else if (nbr == 2) {
+        std::cout << "Il y a deux paramètres" << std::endl;
+    } else {
+        std::cout << "Il y a plus de deux paramètres" << std::endl;
+    }
+    return 0;
+}
+```
+
+#### for
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main(int argc, char *argv[]) {
+    std::string input = argv[1];
+
+    for (int i = 0; i < input.size(); i++) {
+        std::cout << input[i] << std::endl;
+    }
+
+    std::cout << "Autre possibilité:" << std::endl;
+
+    for (char c : input) {
+        std::cout << c << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### Incrémenter une variable
+
+```cpp
+#include <iostream>
+
+int main() {
+    int nbr = 0;
+    std::cout << "Avant incrémentation: " << nbr << std::endl;
+    for (int i = 1; i <= 5; i++) {
+        nbr++;
+    }
+    std::cout << "Après incrémentation: " << nbr << std::endl;
+    return 0;
+}
+```
+
+### Opérations mathématiques
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "5 plus 3 = " << (5 + 3) << std::endl;
+    std::cout << "5 fois 3 = " << (5 * 3) << std::endl;
+    std::cout << "5 puissance 3: " << (5 * 5 * 5) << std::endl;
+    std::cout << "5 modulo 3: " << (5 % 3) << std::endl;
+    return 0;
+}
+```
+
+### Vérifier si une chaîne est contenue dans une autre
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string chaine = "coucou";
+    std::string sousChaine = "ou";
+
+    if (chaine.find(sousChaine) != std::string::npos) {
+        std::cout << "'" << chaine << "' contient '" << sousChaine << "'" << std::endl;
+    }
+
+    std::cout << "Autre possibilité:" << std::endl;
+
+    if (chaine.find(sousChaine) != std::string::npos) {
+        std::cout << "'" << chaine << "' contient '" << sousChaine << "'" << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### Lowercase/Uppercase
+
+```cpp
+#include <iostream>
+#include <algorithm>
+#include <string>
+
+int main() {
+    std::string chaine = "CouCou";
+
+    std::transform(chaine.begin(), chaine.end(), chaine.begin(), ::tolower);
+    std::cout << chaine << " en lowercase: " << chaine << std::endl;
+
+    std::transform(chaine.begin(), chaine.end(), chaine.begin(), ::toupper);
+    std::cout << chaine << " en uppercase: " << chaine << std::endl;
+
+    return 0;
+}
+```
+
+### Enlever un caractère d'une chaîne
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string chaine = "coucou";
+    chaine.erase(std::remove(chaine.begin(), chaine.end(), 'c'), chaine.end());
+
+    std::cout << "chaîne de départ: " << chaine << std::endl;
+
+    return 0;
+}
+```
+
+### Concaténer deux chaînes de caractères
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string chaine1 = "Hello, ";
+    std::string chaine2 = "World!";
+    std::string concatenation = chaine1 + chaine2;
+
+    std::cout << "chaine 1: '" << chaine1 << "'" << std::endl;
+    std::cout << "chaine 2: '" << chaine2 << "'" << std::endl;
+    std::cout << "concaténation: '" << concatenation << "'" << std::endl;
+
+    return 0;
+}
+```
+
+### Comparer deux chaînes de caractères
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string chaine1 = "coucou";
+    std::string chaine2 = "CouCou";
+
+    if (chaine1 == "coucou") {
+        std::cout << chaine1 << " = coucou" << std::endl;
+    }
+    if (chaine1 == chaine2) {
+        std::cout << chaine1 << " = " << chaine2 << std::endl;
+    } else {
+        std::cout << chaine2 << " != " << chaine2 << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### Comparer deux entiers
+
+```cpp
+#include <iostream>
+
+int main() {
+    int nbr = 3;
+
+    if (nbr == 3) {
+        std::cout << nbr << " = 3" << std::endl;
+    }
+    if (nbr != 5) {
+        std::cout << nbr << " != 3" << std::endl;
+    }
+    if (nbr >= 2 || nbr > 2) {
+        std::cout << nbr << " >= 2, " << nbr << " > 2" << std::endl;
+    }
+    if (nbr <= 4 || nbr < 4) {
+        std::cout << nbr << " <= 4, " << nbr << " < 4" << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### Récupérer la position d'une sous-chaîne dans une chaîne
+
+```cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string chaine = "<fis4 e'1 >16 <fis4 e'1 >16 r16<fis4 e'1 >16 r16<fis4 c'2 >16 <fis4 e'1 >16 r16<b2 g'1 >16 r8.g8.3 r16";
+    std::string recherche = "16";
+
+    size_t position = chaine.find(recherche);
+    std::cout << position << std::endl;
+
+    return 0;
+}
+```
+
 ## Python
 
 ### Structure d'un fichier Python
