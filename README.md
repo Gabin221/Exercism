@@ -4,21 +4,21 @@
 
 * [Bash](#bash)
      * [Structure d'un fichier Bash](#structure-fichier-bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-       * [Bash](#bash)
-       * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
-     * [Bash](#bash)
+     * [Récupérer le nombre de paramètres en Bash](#bash)
+     * [Récupérer les paramètres en Bash](#bash)
+     * [Connaître la taille d'une chaine de caractères en Bash](#bash)
+     * [Boucles en Bash](#bash)
+       * [if else en Bash](#bash)
+       * [for en Bash](#bash)
+     * [Incrémenter une variable en Bash](#bash)
+     * [Opérations mathématiques en Bash](#bash)
+     * [Vérifier si une chaîne est contenue dans une autre en Bash](#bash)
+     * [Lowercase/Uppercase en Bash](#bash)
+     * [Enlever un caractère d'une chaîne en Bash](#bash)
+     * [Concaténer deux chaînes de caractères en Bash](#bash)
+     * [Comparer deux chaînes de caractères en Bash](#bash)
+     * [Comparer deux entiers en Bash](#bash)
+     * [Récupérer la position d'une sous-chaîne dans une chaîne en Bash](#bash)
 
 ## Bash <a id="bash"></a>
 
@@ -39,7 +39,7 @@ nbr=$#
 echo "Nombre de paramètres: ${nbr}"
 ```
 
-### Récupérer les paramètres <a id="recuperer-parametres-bash"></a>
+### Récupérer les paramètres en Bash <a id="recuperer-parametres-bash"></a>
 
 ```bash
 #!/usr/bin/env bash
