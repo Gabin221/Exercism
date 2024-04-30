@@ -1,0 +1,32 @@
+{
+  "authors": [
+    "LegalizeAdulthood"
+  ],
+  "contributors": [
+    "AlexLeSang",
+    "cyborgsphinx",
+    "elyashiv",
+    "jackhughesweb",
+    "KevinWMatthews",
+    "kytrinyx",
+    "masters3d",
+    "NobbZ",
+    "patricksjackson"
+  ],
+  "files": {
+    "solution": [
+      "triangle.cpp",
+      "triangle.h"
+    ],
+    "test": [
+      "triangle_test.cpp"
+    ],
+    "example": [
+      ".meta/example.cpp",
+      ".meta/example.h"
+    ]
+  },
+  "blurb": "Determine if a triangle is equilateral, isosceles, or scalene.",
+  "source": "The Ruby Koans triangle project, parts 1 & 2",
+  "source_url": "https://web.archive.org/web/20220831105330/http://rubykoans.com"
+}
