@@ -3,8 +3,11 @@ bash/*/*.bats
 bash/*/.exercism
 cpp/*/test
 cpp/*/CMakeLists.txt
+javascript/*/.exercism
+javascript/*/*.*.js
 javascript/*/LICENSE
 javascript/*/.eslintrc
 javascript/*/.gitignore
-javascript/*/npmrc
-javascript/*/package.json
+javascript/*/.npmrc
+javascript/*/*.json
+javascript/*/HELP.md
