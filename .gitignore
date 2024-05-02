@@ -1,3 +1,4 @@
+.vscode
 bash/*/*.bash
 bash/*/*.bats
 bash/*/.exercism
