@@ -5,7 +5,7 @@
  * @param {string} line
  * @returns {string}
  */
-function frontDoorResponse(line) {
+export function frontDoorResponse(line) {
 	return line[0];
 }
 
@@ -16,7 +16,7 @@ function frontDoorResponse(line) {
  * @param {string} word the letters you responded with before
  * @returns {string} the front door password
  */
-function frontDoorPassword(word) {
+export function frontDoorPassword(word) {
 	let result = "";
 	
 	for (let i = 0; i < word.length; i++) {
@@ -37,8 +37,20 @@ function frontDoorPassword(word) {
  * @param {string} line
  * @returns {string}
  */
-function backDoorResponse(line) {
-	
+export function backDoorResponse(line) {
+	let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	let result = "";
+
+	for (var i = line.length; i > 0; i--) {
+		if (alphabet.includes(line[i])) {
+			result += line[i];
+			break;
+		} else {
+			continue;
+		}
+	}
+
+	return result[0];
 }
 
 /**
@@ -48,12 +60,6 @@ function backDoorResponse(line) {
  * @param {string} word the letters you responded with before
  * @returns {string} the back door password
  */
-function backDoorPassword(word) {
-  throw new Error('Remove this line and implement the function');
+export function backDoorPassword(word) {
+	return frontDoorPassword(word) + ", please"
 }
-
-console.log(frontDoorResponse('Stands so high'));
-console.log(frontDoorPassword('SHIRE'));
-console.log(frontDoorPassword('shire'));
-console.log(backDoorResponse('Stands so high'));
-console.log(backDoorResponse('Stands so high   '));
