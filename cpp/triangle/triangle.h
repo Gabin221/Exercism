@@ -9,7 +9,7 @@ namespace triangle {
         scalene
     };
 
-    flavor kind(float a, float b, float c);
+    flavor kind(double a, double b, double c);
 
 }  // namespace triangle
 
