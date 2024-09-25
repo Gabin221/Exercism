@@ -69,6 +69,23 @@
      * [Comparer deux chaînes de caractères en Python](#comparer-deux-chaines-python)
      * [Comparer deux entiers en Python](#comparer-deux-entiers-python)
      * [Récupérer la position d'une sous-chaîne dans une chaîne en Python](#recuperer-position-sous-chaine-dans-chaine-python)
+* [PowerShell](#powershell)
+     * [Structure d'un fichier PowerShell](#structure-fichier-powershell)
+     * [Récupérer le nombre de paramètres en PowerShell](#recuperer-nombre-parametres-powershell)
+     * [Récupérer les paramètres en PowerShell](#recuperer-parametres-powershell)
+     * [Connaître la taille d'une chaine de caractères en PowerShell](#connaitre-taille-chaine-caracteres-powershell)
+     * [Boucles en PowerShell](#boucles-powershell)
+       * [if else en PowerShell](#if-else-powershell)
+       * [for en PowerShell](#for-powershell)
+     * [Incrémenter une variable en PowerShell](#incrementer-variable-powershell)
+     * [Opérations mathématiques en PowerShell](#operations-mathematiques-powershell)
+     * [Vérifier si une chaîne est contenue dans une autre en PowerShell](#verifier-si-chaine-contenue-dans-une-autre-powershell)
+     * [Lowercase/Uppercase en PowerShell](#lowercase-uppercase-powershell)
+     * [Enlever un caractère d'une chaîne en PowerShell](#enlever-caractere-chaine-powershell)
+     * [Concaténer deux chaînes de caractères en PowerShell](#concatener-deux-chaines-powershell)
+     * [Comparer deux chaînes de caractères en PowerShell](#comparer-deux-chaines-powershell)
+     * [Comparer deux entiers en PowerShell](#comparer-deux-entiers-powershell)
+     * [Récupérer la position d'une sous-chaîne dans une chaîne en PowerShell](#recuperer-position-sous-chaine-dans-chaine-powershell)
 
 ## Bash <a id="bash"></a>
 
