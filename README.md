@@ -971,4 +971,154 @@ position = chaine.find(recherche) + 1
 print(position)
 ```
 
+## PowerShell
 
+### Structure d'un fichier PowerShell <a id="structure-fichier-powershell"></a>
+
+```powershell
+function Get-Greeting {
+    param([string]$name)
+    "Hello, $name"
+}
+
+Get-Greeting -name "World"
+```
+
+### Récupérer le nombre de paramètres en PowerShell <a id="recuperer-nombre-parametres-powershell"></a>
+
+```powershell
+$paramCount = $args.Count
+Write-Output "Nombre de paramètres: $paramCount"
+```
+
+### Récupérer les paramètres en PowerShell <a id="recuperer-parametres-powershell"></a>
+
+```powershell
+$firstParam = $args[0]
+$secondParam = $args[1]
+Write-Output "Premier paramètre: $firstParam"
+Write-Output "Second paramètre: $secondParam"
+```
+
+### Connaître la taille d'une chaîne de caractères en PowerShell <a id="connaitre-taille-chaine-caracteres-powershell"></a>
+
+```powershell
+$string = "PowerShell"
+$length = $string.Length
+Write-Output "La longueur de la chaîne est : $length"
+```
+
+### Boucles en PowerShell <a id="boucles-powershell"></a>
+
+#### if else en PowerShell <a id="if-else-powershell"></a>
+
+```powershell
+$number = 10
+if ($number -gt 5) {
+    Write-Output "Le nombre est supérieur à 5"
+} else {
+    Write-Output "Le nombre est inférieur ou égal à 5"
+}
+```
+
+#### for en PowerShell <a id="for-powershell"></a>
+
+```powershell
+for ($i = 0; $i -lt 5; $i++) {
+    Write-Output "Itération: $i"
+}
+```
+
+### Incrémenter une variable en PowerShell <a id="incrementer-variable-powershell"></a>
+
+```powershell
+$counter = 0
+$counter++
+Write-Output "Compteur après incrémentation: $counter"
+```
+
+### Opérations mathématiques en PowerShell <a id="operations-mathematiques-powershell"></a>
+
+```powershell
+$a = 10
+$b = 5
+
+$sum = $a + $b
+$product = $a * $b
+$quotient = $a / $b
+
+Write-Output "Somme: $sum"
+Write-Output "Produit: $product"
+Write-Output "Quotient: $quotient"
+```
+
+### Vérifier si une chaîne est contenue dans une autre en PowerShell <a id="verifier-si-chaine-contenue-dans-une-autre-powershell"></a>
+
+```powershell
+$string = "PowerShell est génial"
+if ($string -like "*génial*") {
+    Write-Output "La chaîne contient le mot 'génial'"
+}
+```
+
+### Lowercase/Uppercase en PowerShell <a id="lowercase-uppercase-powershell"></a>
+
+```powershell
+$string = "PowerShell"
+$lowercase = $string.ToLower()
+$uppercase = $string.ToUpper()
+
+Write-Output "En minuscules: $lowercase"
+Write-Output "En majuscules: $uppercase"
+```
+
+### Enlever un caractère d'une chaîne en PowerShell <a id="enlever-caractere-chaine-powershell"></a>
+
+```powershell
+$string = "PowerShell"
+$newString = $string.Remove(0, 1)  # Retire la première lettre
+Write-Output "Nouvelle chaîne: $newString"
+```
+
+### Concaténer deux chaînes de caractères en PowerShell <a id="concatener-deux-chaines-powershell"></a>
+
+```powershell
+$string1 = "Power"
+$string2 = "Shell"
+$concatenated = $string1 + $string2
+Write-Output "Chaîne concaténée: $concatenated"
+```
+
+### Comparer deux chaînes de caractères en PowerShell <a id="comparer-deux-chaines-powershell"></a>
+
+```powershell
+$string1 = "PowerShell"
+$string2 = "powershell"
+
+if ($string1 -ieq $string2) {
+    Write-Output "Les chaînes sont égales (comparaison insensible à la casse)"
+} else {
+    Write-Output "Les chaînes sont différentes"
+}
+```
+
+### Comparer deux entiers en PowerShell <a id="comparer-deux-entiers-powershell"></a>
+
+```powershell
+$number1 = 10
+$number2 = 20
+
+if ($number1 -lt $number2) {
+    Write-Output "$number1 est plus petit que $number2"
+} else {
+    Write-Output "$number1 est plus grand ou égal à $number2"
+}
+```
+
+### Récupérer la position d'une sous-chaîne dans une chaîne en PowerShell <a id="recuperer-position-sous-chaine-dans-chaine-powershell"></a>
+
+```powershell
+$string = "PowerShell est puissant"
+$position = $string.IndexOf("puissant")
+Write-Output "Position de 'puissant' dans la chaîne : $position"
+```
