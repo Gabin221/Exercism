@@ -19,3 +19,5 @@ python/*/__pycache__
 python/*/.exercism
 python/*/.pytest_cache
 python/*/HELP.md
+powershell/*/.exercism
+powershell/*/HELP.md
