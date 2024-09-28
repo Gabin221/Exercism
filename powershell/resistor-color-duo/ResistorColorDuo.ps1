@@ -28,8 +28,6 @@ Function Get-ColorCodeValue() {
     )
     
     $ListColors = Get-Colors
-    $Code = Get-ColorCode -Color $Colors[0]
-    $Code += Get-ColorCode -Color $Colors[1]
 
     if ($Colors[0] -eq $ListColors[0]) {
         return Get-ColorCode -Color $Colors[1]
