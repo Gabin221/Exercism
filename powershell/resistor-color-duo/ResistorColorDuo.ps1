@@ -1,21 +1,42 @@
+Function Get-Colors() {
+
+    $List = @("black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white")
+    
+    return $List
+}
+
+Function Get-ColorCode() {
+    [CmdletBinding()]
+    Param(
+        [string]$Color
+    )
+
+    $Colors = Get-Colors
+    $Compteur = 0
+
+    while ($Colors[$Compteur] -ne $Color) {
+        $Compteur++
+    }
+
+    return "" + $Compteur
+}
+
 Function Get-ColorCodeValue() {
-    <#
-    .SYNOPSIS
-    Translate a list of colors to their corresponding color code values.
-
-    .DESCRIPTION
-    Given 2 colors, take the first one and times it by 10 and add the second color to it.
-
-    .PARAMETER Colors
-    The colors to translate to their corresponding color codes.
-
-    .EXAMPLE
-    Get-ColorCodeValue -Colors @("black", "brown")
-    #>
     [CmdletBinding()]
     Param(
         [string[]]$Colors
     )
     
-    throw "Please implement this function"
+    $ListColors = Get-Colors
+    $Code = Get-ColorCode -Color $Colors[0]
+    $Code += Get-ColorCode -Color $Colors[1]
+
+    if ($Colors[0] -eq $ListColors[0]) {
+        return Get-ColorCode -Color $Colors[1]
+    } else {
+        $Code = Get-ColorCode -Color $Colors[0]
+        $Code += Get-ColorCode -Color $Colors[1]
+
+        return $Code
+    }
 }
