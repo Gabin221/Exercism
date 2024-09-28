@@ -81,14 +81,3 @@ Function Get-ResistorLabel() {
 
     return $Result
 }
-
-Get-ResistorLabel -Colors @("orange", "orange", "black")
-Get-ResistorLabel -Colors @("blue", "grey", "brown")
-Get-ResistorLabel -Colors @("red", "black", "red")
-Get-ResistorLabel -Colors @("green", "brown", "orange")
-Get-ResistorLabel -Colors @("yellow", "violet", "yellow")
-Get-ResistorLabel -Colors @("blue", "violet", "blue")
-Get-ResistorLabel -Colors @("black", "black", "black")
-Get-ResistorLabel -Colors @("white", "white", "white")
-Get-ResistorLabel -Colors @("black", "grey", "black")
-Get-ResistorLabel -Colors @("blue", "green", "yellow", "orange")
