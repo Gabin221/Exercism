@@ -4,5 +4,9 @@ Function Get-TwoFer(){
         [string]$Name
     )
 
-    Throw "Please implement this function"
+    if ($Name -eq "") {
+        return "One for you, one for me"
+    } else {
+        return "One for " + $Name + ", one for me"
+    }
 }
