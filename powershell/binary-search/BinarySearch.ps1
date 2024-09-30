@@ -5,5 +5,15 @@ Function Invoke-BinarySearch() {
         [Int64]$Value
     )
 
-    throw "Please implement this function"
+    $Compteur = 0
+
+    for ($i = 0; $i -lt $Array.Length; $i++) {
+        if ($Array[$i] -eq $Value) {
+            return $Compteur
+        } else {
+            $Compteur++
+        }
+    }
+
+    Throw "*error: value not in array*"
 }
