@@ -1,21 +1,27 @@
 Function Invoke-RnaTranscription() {
-    <#
-    .SYNOPSIS
-    Transcribe a DNA strand into RNA.
-
-    .DESCRIPTION
-    Given a DNA strand, return its RNA complement (per RNA transcription).
-
-    .PARAMETER Strand
-    The DNA strand to transcribe.
-
-    .EXAMPLE
-    Invoke-RnaTranscription -Strand "A"
-    #>
     [CmdletBinding()]
     Param(
         [string]$Strand
     )
     
-    throw "Please implement this function"
+    $Result = ""
+
+    for ($i = 0; $i -lt $Strand.Length; $i++) {
+        switch ($Strand[$i]) {
+            "A" { 
+                $Result += "U"
+            }
+            "T" { 
+                $Result += "A"
+            }
+            "C" { 
+                $Result += "G"
+            }
+            "G" { 
+                $Result += "C"
+            }
+        }
+    }
+
+    return $Result
 }
