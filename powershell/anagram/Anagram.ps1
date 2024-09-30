@@ -1,26 +1,39 @@
 Function Invoke-Anagram() {
-    <#
-    .SYNOPSIS
-    Determine if a word is an anagram of other words in a list.
-
-    .DESCRIPTION
-    An anagram is a word formed by rearranging the letters of another word, e.g., spar, formed from rasp.
-    Given a word and a list of possible anagrams, find the anagrams in the list.
-
-    .PARAMETER Subject
-    The word to check
-
-    .PARAMETER Candidates
-    The list of possible anagrams
-
-    .EXAMPLE
-    Invoke-Anagram -Subject "listen" -Candidates @("enlists" "google" "inlets" "banana")
-    #>
     [CmdletBinding()]
     Param(
         [string]$Subject,
         [string[]]$Candidates
     )
 
-    Throw "Please implement this function"
+    # Convert the subject to lowercase, split into characters, sort and join back to form a sorted string
+    $SortedSubject = -join ($Subject.ToLower().ToCharArray() | Sort-Object)
+
+    $PossibleAnagram = @()
+
+    foreach ($candidate in $Candidates) {
+        # Skip candidates that are identical to the subject (ignoring case)
+        if ($candidate.ToLower() -eq $Subject.ToLower()) {
+            continue
+        }
+
+        # Sort the candidate in the same way and check if it matches the sorted subject
+        $SortedCandidate = -join ($candidate.ToLower().ToCharArray() | Sort-Object)
+
+        if ($SortedCandidate -eq $SortedSubject) {
+            $PossibleAnagram += $candidate
+        }
+    }
+
+    # Sort the results based on the order of occurrence in the Candidates list
+    $OrderedAnagrams = @()
+    foreach ($candidate in $Candidates) {
+        if ($PossibleAnagram -contains $candidate) {
+            $OrderedAnagrams += $candidate
+        }
+    }
+
+    return $OrderedAnagrams
 }
+
+# Test avec les anagrammes multiples
+Invoke-Anagram -Subject "allergy" -Candidates @("gallery", "ballerina", "regally", "clergy", "largely", "leading")
