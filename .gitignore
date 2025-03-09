@@ -15,9 +15,13 @@ javascript/*/*.json
 javascript/*/.eslintrc
 javascript/*/.gitignore
 javascript/*/.npmrc
+powershell/*/.exercism
+powershell/*/HELP.md
 python/*/__pycache__
 python/*/.exercism
 python/*/.pytest_cache
 python/*/HELP.md
-powershell/*/.exercism
-powershell/*/HELP.md
+shell
+.directory
+exercism.exe
+README2.md
